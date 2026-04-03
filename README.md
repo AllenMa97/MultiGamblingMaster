@@ -92,7 +92,8 @@ MultiGamblingMaster/
 │   ├── index.html          # HTML 模板
 │   ├── package.json        # Node.js 依赖
 │   └── vite.config.js      # Vite 配置
-├── .env                    # 环境变量配置
+├── .env                    # 环境变量配置（⚠️不提交到 git）
+├── .env.example            # 环境变量模板
 └── README.md               # 项目文档
 ```
 
@@ -115,14 +116,32 @@ cd MultiGamblingMaster
 
 #### 2. 配置环境变量
 
-编辑 `.env` 文件，配置你的 API 密钥：
+**⚠️ 重要：请勿将 `.env` 文件提交到版本控制系统！**
+
+项目已提供 `.env.example` 模板文件，复制并重命名为 `.env`：
+
+```bash
+cp .env.example .env
+```
+
+然后编辑 `.env` 文件，配置你的 API 密钥：
 
 ```env
-DASHSCOPE_API_KEYS=your_api_key_1,your_api_key_2
+# DashScope API Keys (逗号分隔多个 key)
+DASHSCOPE_API_KEYS=your_api_key_here
+
+# DashScope Base URL
 DASHSCOPE_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+
+# LLM Models
 LLM_MODEL_FAST=qwen-flash
 LLM_MODEL_PLUS=qwen-plus
 ```
+
+**获取 API Key：**
+1. 访问 [阿里云 DashScope](https://dashscope.console.aliyun.com/)
+2. 注册/登录账号
+3. 在控制台获取 API Key
 
 #### 3. 安装后端依赖
 
@@ -224,6 +243,12 @@ npm run build
   ]
 }
 ```
+
+## 🔒 安全提示
+
+- **`.env` 文件**：包含敏感的 API 密钥，已添加到 `.gitignore`，**切勿提交到公开仓库**
+- **API Key 管理**：请妥善保管你的 API Key，不要分享或泄露给他人
+- **密钥轮换**：如怀疑 API Key 泄露，请及时在 DashScope 控制台重新生成
 
 ## 🤝 贡献
 
