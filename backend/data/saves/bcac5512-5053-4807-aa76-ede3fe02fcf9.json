@@ -1,0 +1,15 @@
+{
+  "save_id": "bcac5512-5053-4807-aa76-ede3fe02fcf9",
+  "player_name": "玩家",
+  "current_position": 6,
+  "completed_nodes": [
+    6
+  ],
+  "failed_nodes": [],
+  "dice_history": [],
+  "total_wins": 1,
+  "total_losses": 0,
+  "created_at": "2026-04-03T11:53:57.298344",
+  "updated_at": "2026-04-03T11:54:48.614915",
+  "is_completed": false
+}

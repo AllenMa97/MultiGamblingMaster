@@ -1,0 +1,32 @@
+{
+  "map_id": "map_01",
+  "name": "新手村",
+  "description": "适合新手的简单地图",
+  "nodes": [
+    {"id": 0, "type": "start", "name": "起点", "next": [1, 2], "x": 100, "y": 100},
+    {"id": 1, "type": "card", "name": "扑克试炼", "next": [3], "x": 200, "y": 50},
+    {"id": 2, "type": "action", "name": "动作挑战", "next": [3], "x": 200, "y": 150},
+    {"id": 3, "type": "empty", "name": "汇合点", "next": [4, 5, 6], "x": 300, "y": 100},
+    {"id": 4, "type": "card", "name": "牌桌", "next": [7], "x": 400, "y": 50},
+    {"id": 5, "type": "ai", "name": "AI 对话", "next": [7], "x": 400, "y": 100},
+    {"id": 6, "type": "action", "name": "反应测试", "next": [7], "x": 400, "y": 150},
+    {"id": 7, "type": "empty", "name": "营地", "next": [8, 9], "x": 500, "y": 100},
+    {"id": 8, "type": "card", "name": "牌局", "next": [10], "x": 600, "y": 50},
+    {"id": 9, "type": "poetry", "name": "吟诗作对", "next": [10], "x": 600, "y": 150},
+    {"id": 10, "type": "empty", "name": "中转站", "next": [11, 12, 13], "x": 700, "y": 100},
+    {"id": 11, "type": "action", "name": "指令挑战", "next": [14], "x": 800, "y": 50},
+    {"id": 12, "type": "card", "name": "对决", "next": [14], "x": 800, "y": 100},
+    {"id": 13, "type": "ai", "name": "辩论", "next": [14], "x": 800, "y": 150},
+    {"id": 14, "type": "empty", "name": "补给站", "next": [15, 16], "x": 900, "y": 100},
+    {"id": 15, "type": "card", "name": "牌技比拼", "next": [17], "x": 1000, "y": 50},
+    {"id": 16, "type": "action", "name": "快速反应", "next": [17], "x": 1000, "y": 150},
+    {"id": 17, "type": "empty", "name": "汇合点", "next": [18, 19, 20], "x": 1100, "y": 100},
+    {"id": 18, "type": "poetry", "name": "诗词大会", "next": [21], "x": 1200, "y": 50},
+    {"id": 19, "type": "card", "name": "扑克大师", "next": [21], "x": 1200, "y": 100},
+    {"id": 20, "type": "ai", "name": "终极辩论", "next": [21], "x": 1200, "y": 150},
+    {"id": 21, "type": "empty", "name": "最后休息", "next": [22, 23], "x": 1300, "y": 100},
+    {"id": 22, "type": "card", "name": "最终考验", "next": [24], "x": 1400, "y": 50},
+    {"id": 23, "type": "action", "name": "终极动作", "next": [24], "x": 1400, "y": 150},
+    {"id": 24, "type": "end", "name": "终点", "next": [], "x": 1500, "y": 100}
+  ]
+}

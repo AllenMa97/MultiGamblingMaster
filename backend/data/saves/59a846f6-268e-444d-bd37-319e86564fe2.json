@@ -1,0 +1,16 @@
+{
+  "save_id": "59a846f6-268e-444d-bd37-319e86564fe2",
+  "player_name": "wtf",
+  "map_id": "map_01",
+  "current_position": 2,
+  "completed_nodes": [
+    2
+  ],
+  "failed_nodes": [],
+  "dice_history": [],
+  "total_wins": 1,
+  "total_losses": 0,
+  "created_at": "2026-04-03T15:41:05.497510",
+  "updated_at": "2026-04-03T15:41:36.463305",
+  "is_completed": false
+}
