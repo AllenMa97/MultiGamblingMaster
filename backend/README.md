@@ -10,9 +10,8 @@ backend/
 ├── models/           # 数据模型层
 ├── services/         # 业务逻辑层
 ├── data/             # 数据文件
-│   ├── maps/         # 地图配置文件
-│   ├── saves/        # 游戏存档
-│   └── game.db       # SQLite 数据库
+│   ├── maps/         # 地图配置文件 (JSON)
+│   └── saves/        # 游戏存档 (JSON 文件)
 ├── config.py         # 配置管理
 ├── main.py           # 应用入口
 └── requirements.txt  # Python 依赖
@@ -138,9 +137,13 @@ from backend.routers.your_router import router as your_router
 app.include_router(your_router, prefix="/api")
 ```
 
-### 数据库操作
+### 数据存储
 
-使用 SQLite 存储游戏数据，通过 `services/database.py` 统一管理。
+使用 **JSON 文件** 存储游戏数据，通过 `services/database.py` 统一管理。
+
+**数据文件位置:**
+- 地图配置：`backend/data/maps/*.json`
+- 游戏存档：`backend/data/saves/*.json`
 
 ### LLM 集成
 
@@ -153,6 +156,30 @@ app.include_router(your_router, prefix="/api")
 - **python-dotenv** (1.0.1) - 环境变量管理
 - **pydantic** (2.9.0) - 数据验证
 - **openai** (1.50.0) - AI 客户端（兼容 DashScope）
+
+## 💾 数据存储方案
+
+**本项目使用 JSON 文件存储数据，不使用数据库！**
+
+**优势：**
+- ✅ 无需安装数据库
+- ✅ 存档文件可直接查看和编辑
+- ✅ 便于版本控制（Git 可追踪变化）
+- ✅ 部署简单，复制文件即可
+- ✅ 性能足够支持中小型游戏
+
+**文件结构：**
+```
+backend/data/
+├── maps/           # 地图配置
+│   ├── map_01.json
+│   ├── map_02.json
+│   └── map_03.json
+└── saves/          # 游戏存档
+    ├── uuid-1.json
+    ├── uuid-2.json
+    └── uuid-3.json
+```
 
 ## 🎯 核心功能
 
@@ -167,9 +194,10 @@ app.include_router(your_router, prefix="/api")
 - AI 驱动的剧情生成
 
 ### 3. 存档系统
-- JSON 格式存档
+- **JSON 文件格式** - 易于查看和调试
 - UUID 唯一标识
 - 完整的状态保存
+- 无需数据库，直接文件操作
 
 ### 4. AI 集成
 - 通义千问大模型
@@ -189,9 +217,9 @@ uvicorn.run(app, host="0.0.0.0", port=8001, log_level="debug")
 
 Uvicorn 默认输出访问日志和错误日志。
 
-### 数据库检查
+### 存档文件检查
 
-游戏存档位于 `backend/data/saves/`，可直接查看 JSON 文件。
+游戏存档位于 `backend/data/saves/`，可直接查看和编辑 JSON 文件。
 
 ## 📝 代码规范
 
