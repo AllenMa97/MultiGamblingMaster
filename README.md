@@ -250,6 +250,32 @@ npm run build
 - **API Key 管理**：请妥善保管你的 API Key，不要分享或泄露给他人
 - **密钥轮换**：如怀疑 API Key 泄露，请及时在 DashScope 控制台重新生成
 
+## 👥 作者团队
+
+### 主要开发者
+
+**Zhiyong Ma (马智勇)**  
+- 📧 主要开发者 & 项目负责人
+- 🌐 [知乎](https://www.zhihu.com/people/allenma-49)
+- 🎓 [Google Scholar](https://scholar.google.com/citations?user=Brs63a8AAAAJ&hl=en)
+
+### 核心贡献者
+
+<!-- 预留位置：其他 3 位团队成员信息 -->
+<!-- 
+**Contributor Name 1**  
+- 📧 角色/职责
+- 🌐 个人链接（GitHub/知乎/网站等）
+
+**Contributor Name 2**  
+- 📧 角色/职责
+- 🌐 个人链接
+
+**Contributor Name 3**  
+- 📧 角色/职责
+- 🌐 个人链接
+-->
+
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request！
