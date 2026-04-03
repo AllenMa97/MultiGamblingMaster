@@ -213,8 +213,8 @@ export default class MainMenuScene extends Phaser.Scene {
     inputElement.id = 'name-input-' + Date.now();  // 唯一 ID
     inputElement.style.cssText = `
       position: fixed;
-      left: ${panelX}px;
-      top: ${panelY - 20}px;
+      left: 50%;
+      top: 50%;
       transform: translate(-50%, -50%);
       width: 320px;
       height: 50px;
