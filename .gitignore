@@ -5,3 +5,4 @@ __pycache__/
 dist/
 *.db
 .vite/
+Godot_v4.6.2-stable_win64.exe 
