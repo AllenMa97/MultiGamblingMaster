@@ -1,32 +1,183 @@
 {
   "map_id": "map_01",
-  "name": "新手村",
-  "description": "适合新手的简单地图",
-  "nodes": [
-    {"id": 0, "type": "start", "name": "起点", "next": [1, 2], "x": 100, "y": 300},
-    {"id": 1, "type": "card", "name": "扑克试炼", "next": [3], "x": 250, "y": 150},
-    {"id": 2, "type": "action", "name": "动作挑战", "next": [3], "x": 250, "y": 450},
-    {"id": 3, "type": "empty", "name": "汇合点", "next": [4, 5, 6], "x": 400, "y": 300},
-    {"id": 4, "type": "card", "name": "牌桌", "next": [7], "x": 550, "y": 100},
-    {"id": 5, "type": "ai", "name": "AI 对话", "next": [7], "x": 550, "y": 300},
-    {"id": 6, "type": "action", "name": "反应测试", "next": [7], "x": 550, "y": 500},
-    {"id": 7, "type": "empty", "name": "营地", "next": [8, 9], "x": 700, "y": 300},
-    {"id": 8, "type": "card", "name": "牌局", "next": [10], "x": 850, "y": 150},
-    {"id": 9, "type": "poetry", "name": "吟诗作对", "next": [10], "x": 850, "y": 450},
-    {"id": 10, "type": "empty", "name": "中转站", "next": [11, 12, 13], "x": 1000, "y": 300},
-    {"id": 11, "type": "action", "name": "指令挑战", "next": [14], "x": 1150, "y": 100},
-    {"id": 12, "type": "card", "name": "对决", "next": [14], "x": 1150, "y": 300},
-    {"id": 13, "type": "ai", "name": "辩论", "next": [14], "x": 1150, "y": 500},
-    {"id": 14, "type": "empty", "name": "补给站", "next": [15, 16], "x": 1300, "y": 300},
-    {"id": 15, "type": "card", "name": "牌技比拼", "next": [17], "x": 1450, "y": 150},
-    {"id": 16, "type": "action", "name": "快速反应", "next": [17], "x": 1450, "y": 450},
-    {"id": 17, "type": "empty", "name": "汇合点", "next": [18, 19, 20], "x": 1600, "y": 300},
-    {"id": 18, "type": "poetry", "name": "诗词大会", "next": [21], "x": 1750, "y": 100},
-    {"id": 19, "type": "card", "name": "扑克大师", "next": [21], "x": 1750, "y": 300},
-    {"id": 20, "type": "ai", "name": "终极辩论", "next": [21], "x": 1750, "y": 500},
-    {"id": 21, "type": "empty", "name": "最后休息", "next": [22, 23], "x": 1900, "y": 300},
-    {"id": 22, "type": "card", "name": "最终考验", "next": [24], "x": 2050, "y": 150},
-    {"id": 23, "type": "action", "name": "终极动作", "next": [24], "x": 2050, "y": 450},
-    {"id": 24, "type": "end", "name": "终点", "next": [], "x": 2200, "y": 300}
+  "name": "华夏游录 - 江南水乡",
+  "description": "中国风游历主题 - 游览祖国大好河山，体验各地文化",
+  "style": "china_travel",
+  "protagonist": {
+    "name": "徐霞客",
+    "background": "明代旅行家，立志游历中华大地"
+  },
+  "regions": [
+    {
+      "region_id": "jiangnan_01",
+      "name": "苏州园林",
+      "type": "start_area",
+      "location": "江苏省苏州市",
+      "x": 0,
+      "y": 0,
+      "width": 1000,
+      "landmarks": ["拙政园", "留园", "虎丘"],
+      "challenges": [
+        {
+          "id": "poetry_01",
+          "type": "poetry",
+          "name": "园林题诗",
+          "difficulty": 1,
+          "description": "在拙政园中，根据景色创作诗词"
+        },
+        {
+          "id": "action_01",
+          "type": "godot_action",
+          "name": "园林跑酷",
+          "difficulty": 1,
+          "godot_level": "speed_run",
+          "description": "在亭台楼阁间穿梭跳跃"
+        },
+        {
+          "id": "card_01",
+          "type": "card",
+          "name": "评弹牌局",
+          "difficulty": 1,
+          "description": "与苏州评弹艺人比试牌技"
+        }
+      ]
+    },
+    {
+      "region_id": "hangzhou_02",
+      "name": "杭州西湖",
+      "type": "travel_area",
+      "location": "浙江省杭州市",
+      "x": 1200,
+      "y": 0,
+      "width": 1200,
+      "landmarks": ["断桥", "雷峰塔", "三潭印月"],
+      "challenges": [
+        {
+          "id": "dating_01",
+          "type": "dating",
+          "name": "断桥相会",
+          "difficulty": 2,
+          "description": "遇见白娘子，展开浪漫邂逅"
+        },
+        {
+          "id": "action_02",
+          "type": "godot_action",
+          "name": "雷峰塔挑战",
+          "difficulty": 2,
+          "godot_level": "castle_battle",
+          "description": "攀登雷峰塔，击败守塔侍卫"
+        },
+        {
+          "id": "ai_01",
+          "type": "ai",
+          "name": "东坡对诗",
+          "difficulty": 2,
+          "description": "与 AI 苏东坡进行诗词辩论"
+        }
+      ]
+    },
+    {
+      "region_id": "huangshan_03",
+      "name": "黄山云海",
+      "type": "adventure_area",
+      "location": "安徽省黄山市",
+      "x": 2600,
+      "y": 0,
+      "width": 1400,
+      "landmarks": ["光明顶", "迎客松", "飞来石"],
+      "challenges": [
+        {
+          "id": "action_03",
+          "type": "godot_action",
+          "name": "攀登黄山",
+          "difficulty": 3,
+          "godot_level": "platform_challenge",
+          "description": "在险峻山峰间跳跃攀爬"
+        },
+        {
+          "id": "reverse_01",
+          "type": "reverse",
+          "name": "云海幻境",
+          "difficulty": 3,
+          "description": "在云海中找到真实方向"
+        },
+        {
+          "id": "spy_01",
+          "type": "spy",
+          "name": "徽州商帮",
+          "difficulty": 3,
+          "description": "找出徽州商人中的卧底"
+        }
+      ]
+    },
+    {
+      "region_id": "xian_04",
+      "name": "长安古城",
+      "type": "cultural_area",
+      "location": "陕西省西安市",
+      "x": 4200,
+      "y": 0,
+      "width": 1500,
+      "landmarks": ["兵马俑", "大雁塔", "城墙"],
+      "challenges": [
+        {
+          "id": "action_04",
+          "type": "godot_action",
+          "name": "兵马俑之战",
+          "difficulty": 4,
+          "godot_level": "castle_battle",
+          "description": "与复活的秦朝士兵战斗"
+        },
+        {
+          "id": "poetry_02",
+          "type": "poetry",
+          "name": "长安诗会",
+          "difficulty": 4,
+          "description": "参加李白举办的诗歌大会"
+        },
+        {
+          "id": "card_02",
+          "type": "card",
+          "name": "大唐牌坊",
+          "difficulty": 4,
+          "description": "在长安西市与胡商比牌"
+        }
+      ]
+    },
+    {
+      "region_id": "tibet_05",
+      "name": "雪域高原",
+      "type": "final_area",
+      "location": "西藏自治区",
+      "x": 6000,
+      "y": 0,
+      "width": 1600,
+      "landmarks": ["布达拉宫", "珠穆朗玛峰", "纳木错"],
+      "challenges": [
+        {
+          "id": "boss_01",
+          "type": "godot_action",
+          "name": "布达拉宫守护者",
+          "difficulty": 5,
+          "godot_level": "boss_battle",
+          "description": "挑战雪域高原的守护神兽"
+        },
+        {
+          "id": "action_05",
+          "type": "godot_action",
+          "name": "珠峰极限",
+          "difficulty": 5,
+          "godot_level": "speed_run",
+          "description": "在缺氧环境下攀登珠峰"
+        },
+        {
+          "id": "interrogate_01",
+          "type": "interrogate",
+          "name": "高原审问",
+          "difficulty": 5,
+          "description": "审问试图破坏高原和平的阴谋家"
+        }
+      ]
+    }
   ]
 }

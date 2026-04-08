@@ -32,3 +32,18 @@ class ActionResult(BaseModel):
     correct_count: int
     total_count: int
     time_used: float
+
+
+class LevelResult(BaseModel):
+    """通用关卡结果（支持所有类型）"""
+    success: bool
+    time_used: float = 0.0
+    score: int = 0
+    # Godot 动作数据
+    godot_data: dict = {}
+    # 新增关卡类型数据
+    puzzle_data: dict = {}  # 解谜：hints_used, attempts
+    rhythm_data: dict = {}  # 节奏：accuracy, hit_count, miss_count
+    dating_data: dict = {}  # 恋爱：ending_type, affection_level
+    survival_data: dict = {}  # 生存：wave_reached, enemies_defeated
+    escape_data: dict = {}  # 逃亡：escape_time, collisions

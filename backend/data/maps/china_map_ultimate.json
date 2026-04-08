@@ -1,0 +1,2491 @@
+{
+  "map_id": "china_travel_ultimate",
+  "name": "华夏游录 - 完全版",
+  "description": "游历中华大地，覆盖 65 城 195 关，体验山海经神话与各地民俗文化",
+  "background_image": "assets/china_map_bg_ultimate.png",
+  "max_travel_distance": 2,
+  "total_cities": 65,
+  "total_challenges": 195,
+  "difficulty_distribution": {
+    "easy_1star": "10%",
+    "normal_2star": "20%",
+    "medium_3star": "40%",
+    "hard_4star": "20%",
+    "expert_5star": "10%"
+  },
+  "regions": [
+    {
+      "region_id": "direct_municipalities",
+      "name": "直辖市",
+      "center_x": 850,
+      "center_y": 320,
+      "cities": [
+        {
+          "city_id": "beijing",
+          "name": "北京",
+          "province": "北京",
+          "x": 850,
+          "y": 280,
+          "is_start_city": true,
+          "difficulty": 5,
+          "unlocks": [
+            "tianjin"
+          ],
+          "challenges": [
+            {
+              "id": "beijing_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "故宫守卫",
+              "difficulty": 5,
+              "description": "在北京体验故宫守卫"
+            },
+            {
+              "id": "beijing_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长城跑酷",
+              "difficulty": 4,
+              "description": "在北京体验长城跑酷"
+            },
+            {
+              "id": "beijing_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "天坛攀登",
+              "difficulty": 5,
+              "description": "在北京体验天坛攀登"
+            }
+          ]
+        },
+        {
+          "city_id": "tianjin",
+          "name": "天津",
+          "province": "天津",
+          "x": 870,
+          "y": 300,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "shanghai"
+          ],
+          "challenges": [
+            {
+              "id": "tianjin_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "海河漫游",
+              "difficulty": 3,
+              "description": "在天津体验海河漫游"
+            },
+            {
+              "id": "tianjin_puzzle_2",
+              "type": "puzzle",
+              "name": "古文化街",
+              "difficulty": 3,
+              "description": "在天津体验古文化街"
+            },
+            {
+              "id": "tianjin_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "滨海图书馆",
+              "difficulty": 3,
+              "description": "在天津体验滨海图书馆"
+            }
+          ]
+        },
+        {
+          "city_id": "shanghai",
+          "name": "上海",
+          "province": "上海",
+          "x": 920,
+          "y": 420,
+          "is_start_city": true,
+          "difficulty": 4,
+          "unlocks": [
+            "chongqing"
+          ],
+          "challenges": [
+            {
+              "id": "shanghai_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "外滩夜景",
+              "difficulty": 4,
+              "description": "在上海体验外滩夜景"
+            },
+            {
+              "id": "shanghai_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "东方明珠",
+              "difficulty": 4,
+              "description": "在上海体验东方明珠"
+            },
+            {
+              "id": "shanghai_puzzle_3",
+              "type": "puzzle",
+              "name": "豫园之谜",
+              "difficulty": 3,
+              "description": "在上海体验豫园之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "chongqing",
+          "name": "重庆",
+          "province": "重庆",
+          "x": 450,
+          "y": 580,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "chongqing_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "山城阶梯",
+              "difficulty": 4,
+              "description": "在重庆体验山城阶梯"
+            },
+            {
+              "id": "chongqing_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "洪崖洞战斗",
+              "difficulty": 4,
+              "description": "在重庆体验洪崖洞战斗"
+            },
+            {
+              "id": "chongqing_puzzle_3",
+              "type": "puzzle",
+              "name": "火锅之谜",
+              "difficulty": 3,
+              "description": "在重庆体验火锅之谜"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "northeast",
+      "name": "东北地区",
+      "center_x": 1100,
+      "center_y": 220,
+      "cities": [
+        {
+          "city_id": "shenyang",
+          "name": "沈阳",
+          "province": "辽宁",
+          "x": 1050,
+          "y": 250,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "dalian",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "shenyang_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "沈阳故宫",
+              "difficulty": 3,
+              "description": "在沈阳体验沈阳故宫"
+            },
+            {
+              "id": "shenyang_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "北陵公园",
+              "difficulty": 3,
+              "description": "在沈阳体验北陵公园"
+            },
+            {
+              "id": "shenyang_puzzle_3",
+              "type": "puzzle",
+              "name": "张氏帅府",
+              "difficulty": 3,
+              "description": "在沈阳体验张氏帅府"
+            }
+          ]
+        },
+        {
+          "city_id": "dalian",
+          "name": "大连",
+          "province": "辽宁",
+          "x": 1030,
+          "y": 280,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "changchun"
+          ],
+          "challenges": [
+            {
+              "id": "dalian_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "星海广场",
+              "difficulty": 3,
+              "description": "在大连体验星海广场"
+            },
+            {
+              "id": "dalian_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "老虎滩",
+              "difficulty": 3,
+              "description": "在大连体验老虎滩"
+            },
+            {
+              "id": "dalian_puzzle_3",
+              "type": "puzzle",
+              "name": "有轨电车",
+              "difficulty": 2,
+              "description": "在大连体验有轨电车"
+            }
+          ]
+        },
+        {
+          "city_id": "changchun",
+          "name": "长春",
+          "province": "吉林",
+          "x": 1100,
+          "y": 220,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "harbin"
+          ],
+          "challenges": [
+            {
+              "id": "changchun_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "伪满皇宫",
+              "difficulty": 3,
+              "description": "在长春体验伪满皇宫"
+            },
+            {
+              "id": "changchun_puzzle_2",
+              "type": "puzzle",
+              "name": "电影城",
+              "difficulty": 3,
+              "description": "在长春体验电影城"
+            },
+            {
+              "id": "changchun_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "净月潭",
+              "difficulty": 3,
+              "description": "在长春体验净月潭"
+            }
+          ]
+        },
+        {
+          "city_id": "harbin",
+          "name": "哈尔滨",
+          "province": "黑龙江",
+          "x": 1150,
+          "y": 180,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "harbin_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "中央大街",
+              "difficulty": 3,
+              "description": "在哈尔滨体验中央大街"
+            },
+            {
+              "id": "harbin_puzzle_2",
+              "type": "puzzle",
+              "name": "冰灯之谜",
+              "difficulty": 3,
+              "description": "在哈尔滨体验冰灯之谜"
+            },
+            {
+              "id": "harbin_castle_battle_3",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "索菲亚教堂",
+              "difficulty": 3,
+              "description": "在哈尔滨体验索菲亚教堂"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "north_china",
+      "name": "华北地区",
+      "center_x": 750,
+      "center_y": 300,
+      "cities": [
+        {
+          "city_id": "shijiazhuang",
+          "name": "石家庄",
+          "province": "河北",
+          "x": 800,
+          "y": 320,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "taiyuan",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "shijiazhuang_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "赵州桥",
+              "difficulty": 3,
+              "description": "在石家庄体验赵州桥"
+            },
+            {
+              "id": "shijiazhuang_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "正定古城",
+              "difficulty": 3,
+              "description": "在石家庄体验正定古城"
+            },
+            {
+              "id": "shijiazhuang_puzzle_3",
+              "type": "puzzle",
+              "name": "西柏坡",
+              "difficulty": 3,
+              "description": "在石家庄体验西柏坡"
+            }
+          ]
+        },
+        {
+          "city_id": "taiyuan",
+          "name": "太原",
+          "province": "山西",
+          "x": 750,
+          "y": 320,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "datong"
+          ],
+          "challenges": [
+            {
+              "id": "taiyuan_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "晋祠",
+              "difficulty": 4,
+              "description": "在太原体验晋祠"
+            },
+            {
+              "id": "taiyuan_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "双塔寺",
+              "difficulty": 4,
+              "description": "在太原体验双塔寺"
+            },
+            {
+              "id": "taiyuan_puzzle_3",
+              "type": "puzzle",
+              "name": "煤炭之谜",
+              "difficulty": 3,
+              "description": "在太原体验煤炭之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "datong",
+          "name": "大同",
+          "province": "山西",
+          "x": 730,
+          "y": 300,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "hohhot"
+          ],
+          "challenges": [
+            {
+              "id": "datong_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "云冈石窟",
+              "difficulty": 4,
+              "description": "在大同体验云冈石窟"
+            },
+            {
+              "id": "datong_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "悬空寺",
+              "difficulty": 5,
+              "description": "在大同体验悬空寺"
+            },
+            {
+              "id": "datong_puzzle_3",
+              "type": "puzzle",
+              "name": "九龙壁",
+              "difficulty": 3,
+              "description": "在大同体验九龙壁"
+            }
+          ]
+        },
+        {
+          "city_id": "hohhot",
+          "name": "呼和浩特",
+          "province": "内蒙古",
+          "x": 650,
+          "y": 250,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "baotou"
+          ],
+          "challenges": [
+            {
+              "id": "hohhot_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "大召寺",
+              "difficulty": 4,
+              "description": "在呼和浩特体验大召寺"
+            },
+            {
+              "id": "hohhot_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "草原驰骋",
+              "difficulty": 4,
+              "description": "在呼和浩特体验草原驰骋"
+            },
+            {
+              "id": "hohhot_puzzle_3",
+              "type": "puzzle",
+              "name": "蒙古包之谜",
+              "difficulty": 3,
+              "description": "在呼和浩特体验蒙古包之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "baotou",
+          "name": "包头",
+          "province": "内蒙古",
+          "x": 630,
+          "y": 240,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "baotou_puzzle_1",
+              "type": "puzzle",
+              "name": "稀土之谜",
+              "difficulty": 4,
+              "description": "在包头体验稀土之谜"
+            },
+            {
+              "id": "baotou_survival_2",
+              "type": "godot_action",
+              "subtype": "survival",
+              "name": "草原钢城",
+              "difficulty": 4,
+              "description": "在包头体验草原钢城"
+            },
+            {
+              "id": "baotou_castle_battle_3",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "五当召",
+              "difficulty": 4,
+              "description": "在包头体验五当召"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "east_china",
+      "name": "华东地区",
+      "center_x": 850,
+      "center_y": 420,
+      "cities": [
+        {
+          "city_id": "nanjing",
+          "name": "南京",
+          "province": "江苏",
+          "x": 880,
+          "y": 360,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "suzhou",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "nanjing_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "明城墙战斗",
+              "difficulty": 3,
+              "description": "在南京体验明城墙战斗"
+            },
+            {
+              "id": "nanjing_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "中山陵跑酷",
+              "difficulty": 3,
+              "description": "在南京体验中山陵跑酷"
+            },
+            {
+              "id": "nanjing_puzzle_3",
+              "type": "puzzle",
+              "name": "夫子庙",
+              "difficulty": 3,
+              "description": "在南京体验夫子庙"
+            }
+          ]
+        },
+        {
+          "city_id": "suzhou",
+          "name": "苏州",
+          "province": "江苏",
+          "x": 850,
+          "y": 380,
+          "is_start_city": false,
+          "difficulty": 2,
+          "unlocks": [
+            "wuxi"
+          ],
+          "challenges": [
+            {
+              "id": "suzhou_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "园林跑酷",
+              "difficulty": 2,
+              "description": "在苏州体验园林跑酷"
+            },
+            {
+              "id": "suzhou_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "虎丘塔战斗",
+              "difficulty": 2,
+              "description": "在苏州体验虎丘塔战斗"
+            },
+            {
+              "id": "suzhou_puzzle_3",
+              "type": "puzzle",
+              "name": "苏绣之谜",
+              "difficulty": 2,
+              "description": "在苏州体验苏绣之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "wuxi",
+          "name": "无锡",
+          "province": "江苏",
+          "x": 870,
+          "y": 390,
+          "is_start_city": false,
+          "difficulty": 2,
+          "unlocks": [
+            "hangzhou"
+          ],
+          "challenges": [
+            {
+              "id": "wuxi_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "太湖漫游",
+              "difficulty": 2,
+              "description": "在无锡体验太湖漫游"
+            },
+            {
+              "id": "wuxi_puzzle_2",
+              "type": "puzzle",
+              "name": "灵山大佛",
+              "difficulty": 2,
+              "description": "在无锡体验灵山大佛"
+            },
+            {
+              "id": "wuxi_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "鼋头渚",
+              "difficulty": 2,
+              "description": "在无锡体验鼋头渚"
+            }
+          ]
+        },
+        {
+          "city_id": "hangzhou",
+          "name": "杭州",
+          "province": "浙江",
+          "x": 800,
+          "y": 450,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "ningbo"
+          ],
+          "challenges": [
+            {
+              "id": "hangzhou_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "雷峰塔挑战",
+              "difficulty": 3,
+              "description": "在杭州体验雷峰塔挑战"
+            },
+            {
+              "id": "hangzhou_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "西湖漫游",
+              "difficulty": 3,
+              "description": "在杭州体验西湖漫游"
+            },
+            {
+              "id": "hangzhou_dating_3",
+              "type": "dating",
+              "name": "断桥邂逅",
+              "difficulty": 3,
+              "description": "在杭州体验断桥邂逅"
+            }
+          ]
+        },
+        {
+          "city_id": "ningbo",
+          "name": "宁波",
+          "province": "浙江",
+          "x": 830,
+          "y": 480,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "wenzhou"
+          ],
+          "challenges": [
+            {
+              "id": "ningbo_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "天一阁",
+              "difficulty": 3,
+              "description": "在宁波体验天一阁"
+            },
+            {
+              "id": "ningbo_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "港口城市",
+              "difficulty": 3,
+              "description": "在宁波体验港口城市"
+            },
+            {
+              "id": "ningbo_puzzle_3",
+              "type": "puzzle",
+              "name": "河姆渡",
+              "difficulty": 3,
+              "description": "在宁波体验河姆渡"
+            }
+          ]
+        },
+        {
+          "city_id": "wenzhou",
+          "name": "温州",
+          "province": "浙江",
+          "x": 850,
+          "y": 520,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "fuzhou"
+          ],
+          "challenges": [
+            {
+              "id": "wenzhou_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "雁荡山",
+              "difficulty": 4,
+              "description": "在温州体验雁荡山"
+            },
+            {
+              "id": "wenzhou_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "瓯江夜游",
+              "difficulty": 3,
+              "description": "在温州体验瓯江夜游"
+            },
+            {
+              "id": "wenzhou_puzzle_3",
+              "type": "puzzle",
+              "name": "商人精神",
+              "difficulty": 3,
+              "description": "在温州体验商人精神"
+            }
+          ]
+        },
+        {
+          "city_id": "fuzhou",
+          "name": "福州",
+          "province": "福建",
+          "x": 780,
+          "y": 550,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "xiamen"
+          ],
+          "challenges": [
+            {
+              "id": "fuzhou_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "三坊七巷",
+              "difficulty": 3,
+              "description": "在福州体验三坊七巷"
+            },
+            {
+              "id": "fuzhou_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "鼓山",
+              "difficulty": 3,
+              "description": "在福州体验鼓山"
+            },
+            {
+              "id": "fuzhou_puzzle_3",
+              "type": "puzzle",
+              "name": "脱胎漆器",
+              "difficulty": 3,
+              "description": "在福州体验脱胎漆器"
+            }
+          ]
+        },
+        {
+          "city_id": "xiamen",
+          "name": "厦门",
+          "province": "福建",
+          "x": 760,
+          "y": 580,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "nanchang"
+          ],
+          "challenges": [
+            {
+              "id": "xiamen_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "鼓浪屿",
+              "difficulty": 3,
+              "description": "在厦门体验鼓浪屿"
+            },
+            {
+              "id": "xiamen_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "南普陀寺",
+              "difficulty": 3,
+              "description": "在厦门体验南普陀寺"
+            },
+            {
+              "id": "xiamen_puzzle_3",
+              "type": "puzzle",
+              "name": "土楼之谜",
+              "difficulty": 4,
+              "description": "在厦门体验土楼之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "nanchang",
+          "name": "南昌",
+          "province": "江西",
+          "x": 720,
+          "y": 480,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "jingdezhen"
+          ],
+          "challenges": [
+            {
+              "id": "nanchang_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "滕王阁",
+              "difficulty": 3,
+              "description": "在南昌体验滕王阁"
+            },
+            {
+              "id": "nanchang_puzzle_2",
+              "type": "puzzle",
+              "name": "八一起义",
+              "difficulty": 3,
+              "description": "在南昌体验八一起义"
+            },
+            {
+              "id": "nanchang_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "鄱阳湖",
+              "difficulty": 3,
+              "description": "在南昌体验鄱阳湖"
+            }
+          ]
+        },
+        {
+          "city_id": "jingdezhen",
+          "name": "景德镇",
+          "province": "江西",
+          "x": 740,
+          "y": 460,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "jinan"
+          ],
+          "challenges": [
+            {
+              "id": "jingdezhen_puzzle_1",
+              "type": "puzzle",
+              "name": "瓷器之谜",
+              "difficulty": 4,
+              "description": "在景德镇体验瓷器之谜"
+            },
+            {
+              "id": "jingdezhen_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "古窑遗址",
+              "difficulty": 4,
+              "description": "在景德镇体验古窑遗址"
+            },
+            {
+              "id": "jingdezhen_rhythm_3",
+              "type": "rhythm",
+              "name": "青花瓷",
+              "difficulty": 3,
+              "description": "在景德镇体验青花瓷"
+            }
+          ]
+        },
+        {
+          "city_id": "jinan",
+          "name": "济南",
+          "province": "山东",
+          "x": 850,
+          "y": 340,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "qingdao"
+          ],
+          "challenges": [
+            {
+              "id": "jinan_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "趵突泉",
+              "difficulty": 3,
+              "description": "在济南体验趵突泉"
+            },
+            {
+              "id": "jinan_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "大明湖",
+              "difficulty": 3,
+              "description": "在济南体验大明湖"
+            },
+            {
+              "id": "jinan_castle_battle_3",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "千佛山",
+              "difficulty": 3,
+              "description": "在济南体验千佛山"
+            }
+          ]
+        },
+        {
+          "city_id": "qingdao",
+          "name": "青岛",
+          "province": "山东",
+          "x": 880,
+          "y": 360,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "taian"
+          ],
+          "challenges": [
+            {
+              "id": "qingdao_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "栈桥",
+              "difficulty": 3,
+              "description": "在青岛体验栈桥"
+            },
+            {
+              "id": "qingdao_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "崂山",
+              "difficulty": 4,
+              "description": "在青岛体验崂山"
+            },
+            {
+              "id": "qingdao_rhythm_3",
+              "type": "rhythm",
+              "name": "啤酒节",
+              "difficulty": 3,
+              "description": "在青岛体验啤酒节"
+            }
+          ]
+        },
+        {
+          "city_id": "taian",
+          "name": "泰安",
+          "province": "山东",
+          "x": 860,
+          "y": 350,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "taian_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "泰山攀登",
+              "difficulty": 5,
+              "description": "在泰安体验泰山攀登"
+            },
+            {
+              "id": "taian_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "岱庙",
+              "difficulty": 4,
+              "description": "在泰安体验岱庙"
+            },
+            {
+              "id": "taian_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "日出云海",
+              "difficulty": 4,
+              "description": "在泰安体验日出云海"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "central_china",
+      "name": "华中地区",
+      "center_x": 700,
+      "center_y": 480,
+      "cities": [
+        {
+          "city_id": "wuhan",
+          "name": "武汉",
+          "province": "湖北",
+          "x": 700,
+          "y": 500,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "yichang",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "wuhan_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "黄鹤楼战斗",
+              "difficulty": 3,
+              "description": "在武汉体验黄鹤楼战斗"
+            },
+            {
+              "id": "wuhan_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长江大桥",
+              "difficulty": 3,
+              "description": "在武汉体验长江大桥"
+            },
+            {
+              "id": "wuhan_puzzle_3",
+              "type": "puzzle",
+              "name": "热干面之谜",
+              "difficulty": 2,
+              "description": "在武汉体验热干面之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "yichang",
+          "name": "宜昌",
+          "province": "湖北",
+          "x": 650,
+          "y": 520,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "changsha"
+          ],
+          "challenges": [
+            {
+              "id": "yichang_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "三峡大坝",
+              "difficulty": 4,
+              "description": "在宜昌体验三峡大坝"
+            },
+            {
+              "id": "yichang_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "葛洲坝",
+              "difficulty": 4,
+              "description": "在宜昌体验葛洲坝"
+            },
+            {
+              "id": "yichang_puzzle_3",
+              "type": "puzzle",
+              "name": "屈原故里",
+              "difficulty": 3,
+              "description": "在宜昌体验屈原故里"
+            }
+          ]
+        },
+        {
+          "city_id": "changsha",
+          "name": "长沙",
+          "province": "湖南",
+          "x": 650,
+          "y": 550,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "zhangjiajie"
+          ],
+          "challenges": [
+            {
+              "id": "changsha_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "岳麓山跑酷",
+              "difficulty": 3,
+              "description": "在长沙体验岳麓山跑酷"
+            },
+            {
+              "id": "changsha_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "天心阁战斗",
+              "difficulty": 3,
+              "description": "在长沙体验天心阁战斗"
+            },
+            {
+              "id": "changsha_puzzle_3",
+              "type": "puzzle",
+              "name": "臭豆腐之谜",
+              "difficulty": 2,
+              "description": "在长沙体验臭豆腐之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "zhangjiajie",
+          "name": "张家界",
+          "province": "湖南",
+          "x": 600,
+          "y": 570,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "zhengzhou"
+          ],
+          "challenges": [
+            {
+              "id": "zhangjiajie_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "武陵源奇峰",
+              "difficulty": 5,
+              "description": "在张家界体验武陵源奇峰"
+            },
+            {
+              "id": "zhangjiajie_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "天门山飞行",
+              "difficulty": 5,
+              "description": "在张家界体验天门山飞行"
+            },
+            {
+              "id": "zhangjiajie_survival_3",
+              "type": "godot_action",
+              "subtype": "survival",
+              "name": "玻璃栈道",
+              "difficulty": 5,
+              "description": "在张家界体验玻璃栈道"
+            }
+          ]
+        },
+        {
+          "city_id": "zhengzhou",
+          "name": "郑州",
+          "province": "河南",
+          "x": 720,
+          "y": 360,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "luoyang"
+          ],
+          "challenges": [
+            {
+              "id": "zhengzhou_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "少林寺",
+              "difficulty": 4,
+              "description": "在郑州体验少林寺"
+            },
+            {
+              "id": "zhengzhou_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "嵩山",
+              "difficulty": 4,
+              "description": "在郑州体验嵩山"
+            },
+            {
+              "id": "zhengzhou_puzzle_3",
+              "type": "puzzle",
+              "name": "商代遗址",
+              "difficulty": 4,
+              "description": "在郑州体验商代遗址"
+            }
+          ]
+        },
+        {
+          "city_id": "luoyang",
+          "name": "洛阳",
+          "province": "河南",
+          "x": 700,
+          "y": 350,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "kaifeng"
+          ],
+          "challenges": [
+            {
+              "id": "luoyang_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "龙门石窟",
+              "difficulty": 4,
+              "description": "在洛阳体验龙门石窟"
+            },
+            {
+              "id": "luoyang_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "牡丹花海",
+              "difficulty": 3,
+              "description": "在洛阳体验牡丹花海"
+            },
+            {
+              "id": "luoyang_puzzle_3",
+              "type": "puzzle",
+              "name": "白马寺之谜",
+              "difficulty": 3,
+              "description": "在洛阳体验白马寺之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "kaifeng",
+          "name": "开封",
+          "province": "河南",
+          "x": 740,
+          "y": 350,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "kaifeng_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "清明上河园",
+              "difficulty": 4,
+              "description": "在开封体验清明上河园"
+            },
+            {
+              "id": "kaifeng_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "开封府",
+              "difficulty": 4,
+              "description": "在开封体验开封府"
+            },
+            {
+              "id": "kaifeng_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "铁塔",
+              "difficulty": 4,
+              "description": "在开封体验铁塔"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "south_china",
+      "name": "华南地区",
+      "center_x": 550,
+      "center_y": 680,
+      "cities": [
+        {
+          "city_id": "guangzhou",
+          "name": "广州",
+          "province": "广东",
+          "x": 600,
+          "y": 700,
+          "is_start_city": true,
+          "difficulty": 3,
+          "unlocks": [
+            "shenzhen",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "guangzhou_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "十三行战斗",
+              "difficulty": 3,
+              "description": "在广州体验十三行战斗"
+            },
+            {
+              "id": "guangzhou_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "珠江夜跑酷",
+              "difficulty": 3,
+              "description": "在广州体验珠江夜跑酷"
+            },
+            {
+              "id": "guangzhou_puzzle_3",
+              "type": "puzzle",
+              "name": "早茶之谜",
+              "difficulty": 2,
+              "description": "在广州体验早茶之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "shenzhen",
+          "name": "深圳",
+          "province": "广东",
+          "x": 650,
+          "y": 720,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "foshan"
+          ],
+          "challenges": [
+            {
+              "id": "shenzhen_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "梧桐山攀岩",
+              "difficulty": 3,
+              "description": "在深圳体验梧桐山攀岩"
+            },
+            {
+              "id": "shenzhen_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "科技新城",
+              "difficulty": 3,
+              "description": "在深圳体验科技新城"
+            },
+            {
+              "id": "shenzhen_puzzle_3",
+              "type": "puzzle",
+              "name": "世界之窗",
+              "difficulty": 3,
+              "description": "在深圳体验世界之窗"
+            }
+          ]
+        },
+        {
+          "city_id": "foshan",
+          "name": "佛山",
+          "province": "广东",
+          "x": 580,
+          "y": 710,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "guilin"
+          ],
+          "challenges": [
+            {
+              "id": "foshan_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "黄飞鸿",
+              "difficulty": 3,
+              "description": "在佛山体验黄飞鸿"
+            },
+            {
+              "id": "foshan_puzzle_2",
+              "type": "puzzle",
+              "name": "祖庙",
+              "difficulty": 3,
+              "description": "在佛山体验祖庙"
+            },
+            {
+              "id": "foshan_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "南风古灶",
+              "difficulty": 3,
+              "description": "在佛山体验南风古灶"
+            }
+          ]
+        },
+        {
+          "city_id": "guilin",
+          "name": "桂林",
+          "province": "广西",
+          "x": 500,
+          "y": 650,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "nanning"
+          ],
+          "challenges": [
+            {
+              "id": "guilin_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "漓江竹筏漂流",
+              "difficulty": 3,
+              "description": "在桂林体验漓江竹筏漂流"
+            },
+            {
+              "id": "guilin_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "象鼻山攀爬",
+              "difficulty": 4,
+              "description": "在桂林体验象鼻山攀爬"
+            },
+            {
+              "id": "guilin_rhythm_3",
+              "type": "rhythm",
+              "name": "刘三姐对歌",
+              "difficulty": 3,
+              "description": "在桂林体验刘三姐对歌"
+            }
+          ]
+        },
+        {
+          "city_id": "nanning",
+          "name": "南宁",
+          "province": "广西",
+          "x": 480,
+          "y": 700,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "haikou"
+          ],
+          "challenges": [
+            {
+              "id": "nanning_boss_battle_1",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "壮族神兽",
+              "difficulty": 3,
+              "description": "在南宁体验壮族神兽"
+            },
+            {
+              "id": "nanning_rhythm_2",
+              "type": "rhythm",
+              "name": "铜鼓舞",
+              "difficulty": 2,
+              "description": "在南宁体验铜鼓舞"
+            },
+            {
+              "id": "nanning_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "青秀山",
+              "difficulty": 3,
+              "description": "在南宁体验青秀山"
+            }
+          ]
+        },
+        {
+          "city_id": "haikou",
+          "name": "海口",
+          "province": "海南",
+          "x": 550,
+          "y": 850,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "sanya"
+          ],
+          "challenges": [
+            {
+              "id": "haikou_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "椰风海韵",
+              "difficulty": 3,
+              "description": "在海口体验椰风海韵"
+            },
+            {
+              "id": "haikou_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "火山口战斗",
+              "difficulty": 4,
+              "description": "在海口体验火山口战斗"
+            },
+            {
+              "id": "haikou_dating_3",
+              "type": "dating",
+              "name": "天涯海角",
+              "difficulty": 3,
+              "description": "在海口体验天涯海角"
+            }
+          ]
+        },
+        {
+          "city_id": "sanya",
+          "name": "三亚",
+          "province": "海南",
+          "x": 530,
+          "y": 880,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "sanya_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "亚龙湾",
+              "difficulty": 3,
+              "description": "在三亚体验亚龙湾"
+            },
+            {
+              "id": "sanya_puzzle_2",
+              "type": "puzzle",
+              "name": "南山寺",
+              "difficulty": 3,
+              "description": "在三亚体验南山寺"
+            },
+            {
+              "id": "sanya_survival_3",
+              "type": "godot_action",
+              "subtype": "survival",
+              "name": "蜈支洲岛",
+              "difficulty": 4,
+              "description": "在三亚体验蜈支洲岛"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "southwest",
+      "name": "西南地区",
+      "center_x": 350,
+      "center_y": 580,
+      "cities": [
+        {
+          "city_id": "chengdu",
+          "name": "成都",
+          "province": "四川",
+          "x": 400,
+          "y": 550,
+          "is_start_city": true,
+          "difficulty": 4,
+          "unlocks": [
+            "mianyang",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "chengdu_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "武侯祠战斗",
+              "difficulty": 4,
+              "description": "在成都体验武侯祠战斗"
+            },
+            {
+              "id": "chengdu_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "竹林跑酷",
+              "difficulty": 3,
+              "description": "在成都体验竹林跑酷"
+            },
+            {
+              "id": "chengdu_puzzle_3",
+              "type": "puzzle",
+              "name": "三国密码",
+              "difficulty": 3,
+              "description": "在成都体验三国密码"
+            }
+          ]
+        },
+        {
+          "city_id": "mianyang",
+          "name": "绵阳",
+          "province": "四川",
+          "x": 380,
+          "y": 530,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "leshan"
+          ],
+          "challenges": [
+            {
+              "id": "mianyang_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "科技城",
+              "difficulty": 3,
+              "description": "在绵阳体验科技城"
+            },
+            {
+              "id": "mianyang_puzzle_2",
+              "type": "puzzle",
+              "name": "李白故里",
+              "difficulty": 3,
+              "description": "在绵阳体验李白故里"
+            },
+            {
+              "id": "mianyang_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "窦圌山",
+              "difficulty": 4,
+              "description": "在绵阳体验窦圌山"
+            }
+          ]
+        },
+        {
+          "city_id": "leshan",
+          "name": "乐山",
+          "province": "四川",
+          "x": 420,
+          "y": 560,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "jiuzhaigou"
+          ],
+          "challenges": [
+            {
+              "id": "leshan_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "乐山大佛",
+              "difficulty": 4,
+              "description": "在乐山体验乐山大佛"
+            },
+            {
+              "id": "leshan_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "峨眉山",
+              "difficulty": 5,
+              "description": "在乐山体验峨眉山"
+            },
+            {
+              "id": "leshan_puzzle_3",
+              "type": "puzzle",
+              "name": "佛教文化",
+              "difficulty": 3,
+              "description": "在乐山体验佛教文化"
+            }
+          ]
+        },
+        {
+          "city_id": "jiuzhaigou",
+          "name": "九寨沟",
+          "province": "四川",
+          "x": 350,
+          "y": 520,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "kunming"
+          ],
+          "challenges": [
+            {
+              "id": "jiuzhaigou_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "五彩池",
+              "difficulty": 5,
+              "description": "在九寨沟体验五彩池"
+            },
+            {
+              "id": "jiuzhaigou_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "诺日朗瀑布",
+              "difficulty": 5,
+              "description": "在九寨沟体验诺日朗瀑布"
+            },
+            {
+              "id": "jiuzhaigou_rhythm_3",
+              "type": "rhythm",
+              "name": "藏族风情",
+              "difficulty": 4,
+              "description": "在九寨沟体验藏族风情"
+            }
+          ]
+        },
+        {
+          "city_id": "kunming",
+          "name": "昆明",
+          "province": "云南",
+          "x": 300,
+          "y": 650,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "dali"
+          ],
+          "challenges": [
+            {
+              "id": "kunming_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "滇池飞行",
+              "difficulty": 3,
+              "description": "在昆明体验滇池飞行"
+            },
+            {
+              "id": "kunming_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "石林战斗",
+              "difficulty": 3,
+              "description": "在昆明体验石林战斗"
+            },
+            {
+              "id": "kunming_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "春城花海",
+              "difficulty": 3,
+              "description": "在昆明体验春城花海"
+            }
+          ]
+        },
+        {
+          "city_id": "dali",
+          "name": "大理",
+          "province": "云南",
+          "x": 280,
+          "y": 630,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "lijiang"
+          ],
+          "challenges": [
+            {
+              "id": "dali_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "大理古塔",
+              "difficulty": 4,
+              "description": "在大理体验大理古塔"
+            },
+            {
+              "id": "dali_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "洱海漫游",
+              "difficulty": 4,
+              "description": "在大理体验洱海漫游"
+            },
+            {
+              "id": "dali_rhythm_3",
+              "type": "rhythm",
+              "name": "白族风情",
+              "difficulty": 3,
+              "description": "在大理体验白族风情"
+            }
+          ]
+        },
+        {
+          "city_id": "lijiang",
+          "name": "丽江",
+          "province": "云南",
+          "x": 260,
+          "y": 620,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "shangrila"
+          ],
+          "challenges": [
+            {
+              "id": "lijiang_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "丽江古城",
+              "difficulty": 4,
+              "description": "在丽江体验丽江古城"
+            },
+            {
+              "id": "lijiang_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "玉龙雪山",
+              "difficulty": 5,
+              "description": "在丽江体验玉龙雪山"
+            },
+            {
+              "id": "lijiang_puzzle_3",
+              "type": "puzzle",
+              "name": "纳西文化",
+              "difficulty": 4,
+              "description": "在丽江体验纳西文化"
+            }
+          ]
+        },
+        {
+          "city_id": "shangrila",
+          "name": "香格里拉",
+          "province": "云南",
+          "x": 240,
+          "y": 610,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "guiyang"
+          ],
+          "challenges": [
+            {
+              "id": "shangrila_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "梅里雪山",
+              "difficulty": 5,
+              "description": "在香格里拉体验梅里雪山"
+            },
+            {
+              "id": "shangrila_castle_battle_2",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "松赞林寺",
+              "difficulty": 5,
+              "description": "在香格里拉体验松赞林寺"
+            },
+            {
+              "id": "shangrila_survival_3",
+              "type": "godot_action",
+              "subtype": "survival",
+              "name": "虎跳峡",
+              "difficulty": 5,
+              "description": "在香格里拉体验虎跳峡"
+            }
+          ]
+        },
+        {
+          "city_id": "guiyang",
+          "name": "贵阳",
+          "province": "贵州",
+          "x": 500,
+          "y": 600,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "zunyi"
+          ],
+          "challenges": [
+            {
+              "id": "guiyang_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "黄果树瀑布",
+              "difficulty": 4,
+              "description": "在贵阳体验黄果树瀑布"
+            },
+            {
+              "id": "guiyang_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "苗寨飞行",
+              "difficulty": 3,
+              "description": "在贵阳体验苗寨飞行"
+            },
+            {
+              "id": "guiyang_puzzle_3",
+              "type": "puzzle",
+              "name": "酸汤鱼",
+              "difficulty": 3,
+              "description": "在贵阳体验酸汤鱼"
+            }
+          ]
+        },
+        {
+          "city_id": "zunyi",
+          "name": "遵义",
+          "province": "贵州",
+          "x": 480,
+          "y": 590,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "lhasa"
+          ],
+          "challenges": [
+            {
+              "id": "zunyi_puzzle_1",
+              "type": "puzzle",
+              "name": "遵义会议",
+              "difficulty": 4,
+              "description": "在遵义体验遵义会议"
+            },
+            {
+              "id": "zunyi_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "赤水丹霞",
+              "difficulty": 4,
+              "description": "在遵义体验赤水丹霞"
+            },
+            {
+              "id": "zunyi_puzzle_3",
+              "type": "puzzle",
+              "name": "茅台镇",
+              "difficulty": 3,
+              "description": "在遵义体验茅台镇"
+            }
+          ]
+        },
+        {
+          "city_id": "lhasa",
+          "name": "拉萨",
+          "province": "西藏",
+          "x": 200,
+          "y": 600,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "shigatse"
+          ],
+          "challenges": [
+            {
+              "id": "lhasa_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "布达拉宫",
+              "difficulty": 5,
+              "description": "在拉萨体验布达拉宫"
+            },
+            {
+              "id": "lhasa_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "雪域高原",
+              "difficulty": 5,
+              "description": "在拉萨体验雪域高原"
+            },
+            {
+              "id": "lhasa_puzzle_3",
+              "type": "puzzle",
+              "name": "大昭寺",
+              "difficulty": 5,
+              "description": "在拉萨体验大昭寺"
+            }
+          ]
+        },
+        {
+          "city_id": "shigatse",
+          "name": "日喀则",
+          "province": "西藏",
+          "x": 180,
+          "y": 620,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "shigatse_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "扎什伦布寺",
+              "difficulty": 5,
+              "description": "在日喀则体验扎什伦布寺"
+            },
+            {
+              "id": "shigatse_survival_2",
+              "type": "godot_action",
+              "subtype": "survival",
+              "name": "珠峰大本营",
+              "difficulty": 5,
+              "description": "在日喀则体验珠峰大本营"
+            },
+            {
+              "id": "shigatse_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "羊卓雍措",
+              "difficulty": 5,
+              "description": "在日喀则体验羊卓雍措"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "northwest",
+      "name": "西北地区",
+      "center_x": 250,
+      "center_y": 330,
+      "cities": [
+        {
+          "city_id": "xian",
+          "name": "西安",
+          "province": "陕西",
+          "x": 350,
+          "y": 350,
+          "is_start_city": true,
+          "difficulty": 4,
+          "unlocks": [
+            "xianyang",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "xian_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "兵马俑复活",
+              "difficulty": 4,
+              "description": "在西安体验兵马俑复活"
+            },
+            {
+              "id": "xian_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长安夜市",
+              "difficulty": 3,
+              "description": "在西安体验长安夜市"
+            },
+            {
+              "id": "xian_puzzle_3",
+              "type": "puzzle",
+              "name": "青铜鼎之谜",
+              "difficulty": 4,
+              "description": "在西安体验青铜鼎之谜"
+            }
+          ]
+        },
+        {
+          "city_id": "xianyang",
+          "name": "咸阳",
+          "province": "陕西",
+          "x": 340,
+          "y": 340,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "yanan"
+          ],
+          "challenges": [
+            {
+              "id": "xianyang_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "乾陵",
+              "difficulty": 4,
+              "description": "在咸阳体验乾陵"
+            },
+            {
+              "id": "xianyang_puzzle_2",
+              "type": "puzzle",
+              "name": "汉阳陵",
+              "difficulty": 4,
+              "description": "在咸阳体验汉阳陵"
+            },
+            {
+              "id": "xianyang_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "郑国渠",
+              "difficulty": 3,
+              "description": "在咸阳体验郑国渠"
+            }
+          ]
+        },
+        {
+          "city_id": "yanan",
+          "name": "延安",
+          "province": "陕西",
+          "x": 380,
+          "y": 330,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "lanzhou"
+          ],
+          "challenges": [
+            {
+              "id": "yanan_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "宝塔山",
+              "difficulty": 4,
+              "description": "在延安体验宝塔山"
+            },
+            {
+              "id": "yanan_puzzle_2",
+              "type": "puzzle",
+              "name": "枣园",
+              "difficulty": 3,
+              "description": "在延安体验枣园"
+            },
+            {
+              "id": "yanan_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "黄河壶口",
+              "difficulty": 4,
+              "description": "在延安体验黄河壶口"
+            }
+          ]
+        },
+        {
+          "city_id": "lanzhou",
+          "name": "兰州",
+          "province": "甘肃",
+          "x": 280,
+          "y": 340,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "dunhuang"
+          ],
+          "challenges": [
+            {
+              "id": "lanzhou_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "黄河铁桥",
+              "difficulty": 4,
+              "description": "在兰州体验黄河铁桥"
+            },
+            {
+              "id": "lanzhou_puzzle_2",
+              "type": "puzzle",
+              "name": "牛肉面之谜",
+              "difficulty": 3,
+              "description": "在兰州体验牛肉面之谜"
+            },
+            {
+              "id": "lanzhou_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "白塔山",
+              "difficulty": 4,
+              "description": "在兰州体验白塔山"
+            }
+          ]
+        },
+        {
+          "city_id": "dunhuang",
+          "name": "敦煌",
+          "province": "甘肃",
+          "x": 200,
+          "y": 320,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "jiayuguan"
+          ],
+          "challenges": [
+            {
+              "id": "dunhuang_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "莫高窟飞行",
+              "difficulty": 5,
+              "description": "在敦煌体验莫高窟飞行"
+            },
+            {
+              "id": "dunhuang_puzzle_2",
+              "type": "puzzle",
+              "name": "藏经洞密码",
+              "difficulty": 5,
+              "description": "在敦煌体验藏经洞密码"
+            },
+            {
+              "id": "dunhuang_boss_battle_3",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "九色鹿王",
+              "difficulty": 5,
+              "description": "在敦煌体验九色鹿王"
+            }
+          ]
+        },
+        {
+          "city_id": "jiayuguan",
+          "name": "嘉峪关",
+          "province": "甘肃",
+          "x": 180,
+          "y": 330,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "xining"
+          ],
+          "challenges": [
+            {
+              "id": "jiayuguan_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "天下第一雄关",
+              "difficulty": 5,
+              "description": "在嘉峪关体验天下第一雄关"
+            },
+            {
+              "id": "jiayuguan_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长城西端",
+              "difficulty": 5,
+              "description": "在嘉峪关体验长城西端"
+            },
+            {
+              "id": "jiayuguan_survival_3",
+              "type": "godot_action",
+              "subtype": "survival",
+              "name": "戈壁滩",
+              "difficulty": 5,
+              "description": "在嘉峪关体验戈壁滩"
+            }
+          ]
+        },
+        {
+          "city_id": "xining",
+          "name": "西宁",
+          "province": "青海",
+          "x": 250,
+          "y": 400,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "yinchuan"
+          ],
+          "challenges": [
+            {
+              "id": "xining_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "青海湖",
+              "difficulty": 4,
+              "description": "在西宁体验青海湖"
+            },
+            {
+              "id": "xining_puzzle_2",
+              "type": "puzzle",
+              "name": "塔尔寺",
+              "difficulty": 4,
+              "description": "在西宁体验塔尔寺"
+            },
+            {
+              "id": "xining_rhythm_3",
+              "type": "rhythm",
+              "name": "环湖赛",
+              "difficulty": 3,
+              "description": "在西宁体验环湖赛"
+            }
+          ]
+        },
+        {
+          "city_id": "yinchuan",
+          "name": "银川",
+          "province": "宁夏",
+          "x": 300,
+          "y": 300,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "wulumuqi"
+          ],
+          "challenges": [
+            {
+              "id": "yinchuan_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "西夏王陵",
+              "difficulty": 4,
+              "description": "在银川体验西夏王陵"
+            },
+            {
+              "id": "yinchuan_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "沙湖",
+              "difficulty": 4,
+              "description": "在银川体验沙湖"
+            },
+            {
+              "id": "yinchuan_platform_challenge_3",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "贺兰山",
+              "difficulty": 4,
+              "description": "在银川体验贺兰山"
+            }
+          ]
+        },
+        {
+          "city_id": "wulumuqi",
+          "name": "乌鲁木齐",
+          "province": "新疆",
+          "x": 100,
+          "y": 300,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [
+            "kashi"
+          ],
+          "challenges": [
+            {
+              "id": "wulumuqi_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "天山天池",
+              "difficulty": 5,
+              "description": "在乌鲁木齐体验天山天池"
+            },
+            {
+              "id": "wulumuqi_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "大巴扎",
+              "difficulty": 4,
+              "description": "在乌鲁木齐体验大巴扎"
+            },
+            {
+              "id": "wulumuqi_rhythm_3",
+              "type": "rhythm",
+              "name": "维吾尔族舞蹈",
+              "difficulty": 4,
+              "description": "在乌鲁木齐体验维吾尔族舞蹈"
+            }
+          ]
+        },
+        {
+          "city_id": "kashi",
+          "name": "喀什",
+          "province": "新疆",
+          "x": 80,
+          "y": 350,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "kashi_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "古城",
+              "difficulty": 5,
+              "description": "在喀什体验古城"
+            },
+            {
+              "id": "kashi_puzzle_2",
+              "type": "puzzle",
+              "name": "艾提尕尔清真寺",
+              "difficulty": 5,
+              "description": "在喀什体验艾提尕尔清真寺"
+            },
+            {
+              "id": "kashi_speed_run_3",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "丝绸之路",
+              "difficulty": 5,
+              "description": "在喀什体验丝绸之路"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "special_regions",
+      "name": "特别行政区及台湾",
+      "center_x": 800,
+      "center_y": 650,
+      "cities": [
+        {
+          "city_id": "hongkong",
+          "name": "香港",
+          "province": "香港",
+          "x": 620,
+          "y": 750,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [
+            "macau",
+            "beijing"
+          ],
+          "challenges": [
+            {
+              "id": "hongkong_speed_run_1",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "维多利亚港",
+              "difficulty": 4,
+              "description": "在香港体验维多利亚港"
+            },
+            {
+              "id": "hongkong_platform_challenge_2",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "太平山",
+              "difficulty": 4,
+              "description": "在香港体验太平山"
+            },
+            {
+              "id": "hongkong_puzzle_3",
+              "type": "puzzle",
+              "name": "迪士尼",
+              "difficulty": 3,
+              "description": "在香港体验迪士尼"
+            }
+          ]
+        },
+        {
+          "city_id": "macau",
+          "name": "澳门",
+          "province": "澳门",
+          "x": 590,
+          "y": 740,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": [
+            "taipei"
+          ],
+          "challenges": [
+            {
+              "id": "macau_castle_battle_1",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "大三巴",
+              "difficulty": 3,
+              "description": "在澳门体验大三巴"
+            },
+            {
+              "id": "macau_speed_run_2",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "威尼斯人",
+              "difficulty": 3,
+              "description": "在澳门体验威尼斯人"
+            },
+            {
+              "id": "macau_puzzle_3",
+              "type": "puzzle",
+              "name": "葡京赌场",
+              "difficulty": 3,
+              "description": "在澳门体验葡京赌场"
+            }
+          ]
+        },
+        {
+          "city_id": "taipei",
+          "name": "台北",
+          "province": "台湾",
+          "x": 950,
+          "y": 600,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "taipei_platform_challenge_1",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "台北 101",
+              "difficulty": 4,
+              "description": "在台北体验台北 101"
+            },
+            {
+              "id": "taipei_puzzle_2",
+              "type": "puzzle",
+              "name": "故宫博物院",
+              "difficulty": 4,
+              "description": "在台北体验故宫博物院"
+            },
+            {
+              "id": "taipei_rhythm_3",
+              "type": "rhythm",
+              "name": "夜市美食",
+              "difficulty": 3,
+              "description": "在台北体验夜市美食"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

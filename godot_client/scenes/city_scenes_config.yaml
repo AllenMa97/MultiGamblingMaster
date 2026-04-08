@@ -1,0 +1,654 @@
+# 华夏游录 - 30 城 Godot 场景配置总览
+# 每个城市包含 2-3 个关卡，共 85 个关卡
+
+# ============================================
+# 江南地区（5 城，15 关卡）
+# ============================================
+
+# 1. 苏州 (suzhou) - 难度★
+city_suzhou:
+  scenes:
+    - name: "园林跑酷"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 1
+      scene_file: "res://scenes/levels/suzhou_garden_speed.tscn"
+      config:
+        time_limit: 120
+        platform_count: 20
+        obstacle_density: "low"
+        background: "res://assets/backgrounds/suzhou_garden.png"
+        
+    - name: "虎丘塔战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 1
+      scene_file: "res://scenes/levels/suzhou_tiger_hill.tscn"
+      config:
+        enemy_count: 5
+        enemy_type: "guard"
+        background: "res://assets/backgrounds/tiger_hill_pagoda.png"
+        
+    - name: "苏绣之谜"
+      type: "puzzle"
+      difficulty: 1
+      scene_file: "res://scenes/levels/suzhou_embroidery_puzzle.tscn"
+      config:
+        puzzle_type: "pictorial"
+        hint_count: 3
+        time_limit: 300
+
+# 2. 杭州 (hangzhou) - 难度★★
+city_hangzhou:
+  scenes:
+    - name: "雷峰塔挑战"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 2
+      scene_file: "res://scenes/levels/hangzhou_leifeng_pagoda.tscn"
+      config:
+        enemy_count: 8
+        enemy_type: "snake_spirit"
+        background: "res://assets/backgrounds/leifeng_pagoda.png"
+        
+    - name: "西湖漫游"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 2
+      scene_file: "res://scenes/levels/hangzhou_west_lake.tscn"
+      config:
+        time_limit: 90
+        platform_count: 25
+        background: "res://assets/backgrounds/west_lake.png"
+        
+    - name: "断桥邂逅"
+      type: "dating"
+      difficulty: 2
+      scene_file: "res://scenes/levels/hangzhou_broken_bridge.tscn"
+      config:
+        romance_type: "white_snake"
+        dialogue_tree: "bai_niangzi_story"
+
+# 3. 黄山 (huangshan) - 难度★★★
+city_huangshan:
+  scenes:
+    - name: "攀登黄山"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 3
+      scene_file: "res://scenes/levels/huangshan_climb.tscn"
+      config:
+        platform_count: 40
+        platform_type: "rock"
+        background: "res://assets/backgrounds/huangshan_peaks.png"
+        
+    - name: "云海飞行"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/huangshan_clouds.tscn"
+      config:
+        time_limit: 90
+        background: "res://assets/backgrounds/huangshan_clouds.png"
+        
+    - name: "迎客松之谜"
+      type: "puzzle"
+      difficulty: 2
+      scene_file: "res://scenes/levels/huangshan_pine_puzzle.tscn"
+      config:
+        puzzle_type: "pictorial"
+
+# 4. 南京 (nanjing) - 难度★★
+city_nanjing:
+  scenes:
+    - name: "明城墙战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 2
+      scene_file: "res://scenes/levels/nanjing_city_wall.tscn"
+      config:
+        enemy_count: 6
+        background: "res://assets/backgrounds/nanjing_wall.png"
+        
+    - name: "中山陵跑酷"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 2
+      scene_file: "res://scenes/levels/nanjing_sun_yat_sen.tscn"
+      config:
+        time_limit: 100
+        platform_count: 30
+
+# 5. 无锡 (wuxi) - 难度★
+city_wuxi:
+  scenes:
+    - name: "太湖漫游"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 1
+      scene_file: "res://scenes/levels/wuxi_taihu_lake.tscn"
+      config:
+        time_limit: 120
+        background: "res://assets/backgrounds/taihu_lake.png"
+        
+    - name: "灵山大佛"
+      type: "puzzle"
+      difficulty: 1
+      scene_file: "res://scenes/levels/wuxi_buddha_puzzle.tscn"
+      config:
+        puzzle_type: "pictorial"
+
+# ============================================
+# 岭南地区（5 城，14 关卡）
+# ============================================
+
+# 6. 广州 (guangzhou) - 难度★★★
+city_guangzhou:
+  scenes:
+    - name: "十三行战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/guangzhou_thirteen_factories.tscn"
+      
+    - name: "珠江夜跑酷"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/guangzhou_zhujiang_night.tscn"
+      
+    - name: "早茶之谜"
+      type: "puzzle"
+      difficulty: 2
+      scene_file: "res://scenes/levels/guangzhou_dimsum_puzzle.tscn"
+
+# 7. 深圳 (shenzhen) - 难度★★★★
+city_shenzhen:
+  scenes:
+    - name: "梧桐山攀岩"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 4
+      scene_file: "res://scenes/levels/shenzhen_wutong_mountain.tscn"
+      
+    - name: "科技新城"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/shenzhen_tech_city.tscn"
+
+# 8. 桂林 (guilin) - 难度★★★★
+city_guilin:
+  scenes:
+    - name: "漓江竹筏漂流"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/guilin_li_river.tscn"
+      
+    - name: "象鼻山攀爬"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 4
+      scene_file: "res://scenes/levels/guilin_elephant_hill.tscn"
+      
+    - name: "刘三姐对歌"
+      type: "rhythm"
+      difficulty: 3
+      scene_file: "res://scenes/levels/guilin_liu_sanjie.tscn"
+      config:
+        music_type: "folk_song"
+
+# 9. 南宁 (nanning) - 难度★★★
+city_nanning:
+  scenes:
+    - name: "壮族神兽"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/nanning_zhuang_beast.tscn"
+      
+    - name: "铜鼓舞"
+      type: "rhythm"
+      difficulty: 2
+      scene_file: "res://scenes/levels/nanning_bronze_drum.tscn"
+      config:
+        music_type: "dance"
+
+# 10. 海口 (haikou) - 难度★★★★★
+city_haikou:
+  scenes:
+    - name: "椰风海韵"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 4
+      scene_file: "res://scenes/levels/haikou_coconut_breeze.tscn"
+      
+    - name: "火山口战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/haikou_volcano.tscn"
+
+# ============================================
+# 西南地区（5 城，15 关卡）
+# ============================================
+
+# 11. 成都 (chengdu) - 难度★★★★
+city_chengdu:
+  scenes:
+    - name: "武侯祠战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 4
+      scene_file: "res://scenes/levels/chengdu_wuhou_shrine.tscn"
+      
+    - name: "竹林跑酷"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/chengdu_bamboo_forest.tscn"
+      
+    - name: "三国密码"
+      type: "puzzle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/chengdu_bagua_puzzle.tscn"
+      config:
+        puzzle_type: "astronomy"
+
+# 12. 重庆 (chongqing) - 难度★★★★★
+city_chongqing:
+  scenes:
+    - name: "山城阶梯"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 5
+      scene_file: "res://scenes/levels/chongqing_mountain_stairs.tscn"
+      
+    - name: "洪崖洞战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 4
+      scene_file: "res://scenes/levels/chongqing_hongya_cave.tscn"
+      
+    - name: "火锅之谜"
+      type: "puzzle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/chongqing_hotpot_puzzle.tscn"
+
+# 13. 昆明 (kunming) - 难度★★★★
+city_kunming:
+  scenes:
+    - name: "滇池飞行"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/kunming_dianchi_lake.tscn"
+      
+    - name: "石林战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 4
+      scene_file: "res://scenes/levels/kunming_stone_forest.tscn"
+
+# 14. 大理 (dali) - 难度★★★★★
+city_dali:
+  scenes:
+    - name: "大理古塔"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/dali_three_pagodas.tscn"
+      
+    - name: "洱海漫游"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 4
+      scene_file: "res://scenes/levels/dali_erhai_lake.tscn"
+
+# 15. 贵阳 (guiyang) - 难度★★★★
+city_guiyang:
+  scenes:
+    - name: "黄果树瀑布"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 4
+      scene_file: "res://scenes/levels/guiyang_huangguoshu_waterfall.tscn"
+      
+    - name: "苗寨飞行"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/guiyang_miao_village.tscn"
+
+# ============================================
+# 华中地区（3 城，9 关卡）
+# ============================================
+
+# 16. 武汉 (wuhan) - 难度★★
+city_wuhan:
+  scenes:
+    - name: "黄鹤楼战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 2
+      scene_file: "res://scenes/levels/wuhan_yellow_crane_tower.tscn"
+      
+    - name: "长江大桥"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 2
+      scene_file: "res://scenes/levels/wuhan_yangtze_bridge.tscn"
+      
+    - name: "热干面之谜"
+      type: "puzzle"
+      difficulty: 1
+      scene_file: "res://scenes/levels/wuhan_noodle_puzzle.tscn"
+
+# 17. 长沙 (changsha) - 难度★★★
+city_changsha:
+  scenes:
+    - name: "岳麓山跑酷"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/changsha_yuelu_mountain.tscn"
+      
+    - name: "天心阁战斗"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/changsha_tianxin_pavilion.tscn"
+      
+    - name: "臭豆腐之谜"
+      type: "puzzle"
+      difficulty: 2
+      scene_file: "res://scenes/levels/changsha_stinky_tofu_puzzle.tscn"
+
+# 18. 张家界 (zhangjiajie) - 难度★★★★★
+city_zhangjiajie:
+  scenes:
+    - name: "武陵源奇峰"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 5
+      scene_file: "res://scenes/levels/zhangjiajie_wulingyuan.tscn"
+      
+    - name: "天门山飞行"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 5
+      scene_file: "res://scenes/levels/zhangjiajie_tianmen_mountain.tscn"
+
+# ============================================
+# 西北地区（3 城，10 关卡）
+# ============================================
+
+# 19. 西安 (xian) - 难度★★★★
+city_xian:
+  scenes:
+    - name: "兵马俑复活"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 4
+      scene_file: "res://scenes/levels/xian_terracotta_warriors.tscn"
+      
+    - name: "长安夜市"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/xian_tang_night_market.tscn"
+      
+    - name: "青铜鼎之谜"
+      type: "puzzle"
+      difficulty: 4
+      scene_file: "res://scenes/levels/xian_bronze_ding_puzzle.tscn"
+      config:
+        puzzle_type: "inscription"
+        
+    - name: "秦始皇陵"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/xian_qin_mausoleum.tscn"
+
+# 20. 敦煌 (dunhuang) - 难度★★★★★
+city_dunhuang:
+  scenes:
+    - name: "莫高窟飞行"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 5
+      scene_file: "res://scenes/levels/dunhuang_mogao_caves.tscn"
+      
+    - name: "藏经洞密码"
+      type: "puzzle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/dunhuang_library_puzzle.tscn"
+      config:
+        puzzle_type: "classic_text"
+        
+    - name: "九色鹿王"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/dunhuang_nine_colored_deer.tscn"
+
+# 21. 三星堆 (sanxingdui) - 难度★★★★★
+city_sanxingdui:
+  scenes:
+    - name: "青铜神树之谜"
+      type: "puzzle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/sanxingdui_bronze_tree_puzzle.tscn"
+      config:
+        puzzle_type: "astronomy"
+        
+    - name: "黄金面具"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/sanxingdui_gold_mask.tscn"
+      
+    - name: "纵目神像"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/sanxingdui_vertical_eyes.tscn"
+      
+    - name: "三星堆古城逃亡"
+      type: "escape"
+      difficulty: 5
+      scene_file: "res://scenes/levels/sanxingdui_ancient_city_escape.tscn"
+      config:
+        escape_type: "ancient_city"
+
+# ============================================
+# 华北地区（3 城，8 关卡）
+# ============================================
+
+# 22. 北京 (beijing) - 难度★★★★★
+city_beijing:
+  scenes:
+    - name: "故宫守卫"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/beijing_forbidden_city.tscn"
+      
+    - name: "长城跑酷"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 4
+      scene_file: "res://scenes/levels/beijing_great_wall.tscn"
+      
+    - name: "天坛攀登"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 5
+      scene_file: "res://scenes/levels/beijing_temple_of_heaven.tscn"
+
+# 23. 平遥 (pingyao) - 难度★★★
+city_pingyao:
+  scenes:
+    - name: "晋商票号"
+      type: "puzzle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/pingyao_bank_puzzle.tscn"
+      config:
+        puzzle_type: "music_code"
+        
+    - name: "古城墙"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 2
+      scene_file: "res://scenes/levels/pingyao_ancient_wall.tscn"
+
+# 24. 洛阳 (luoyang) - 难度★★★★
+city_luoyang:
+  scenes:
+    - name: "龙门石窟"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 4
+      scene_file: "res://scenes/levels/luoyang_longmen_grottoes.tscn"
+      
+    - name: "牡丹花海"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 3
+      scene_file: "res://scenes/levels/luoyang_peony_garden.tscn"
+      
+    - name: "白马寺之谜"
+      type: "puzzle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/luoyang_white_horse_temple_puzzle.tscn"
+
+# ============================================
+# 山海经神话地区（3 城，8 关卡）
+# ============================================
+
+# 25. 昆仑山 (kunlun) - 难度★★★★★★
+city_kunlun:
+  scenes:
+    - name: "昆仑天梯"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 6
+      scene_file: "res://scenes/levels/kunlun_heavenly_ladder.tscn"
+      
+    - name: "西王母"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 6
+      scene_file: "res://scenes/levels/kunlun_queen_mother_west.tscn"
+      
+    - name: "开明兽"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 6
+      scene_file: "res://scenes/levels/kunlun_kai_ming_beast.tscn"
+      
+    - name: "瑶池仙草"
+      type: "puzzle"
+      difficulty: 6
+      scene_file: "res://scenes/levels/kunlun_yaochi_herb_puzzle.tscn"
+
+# 26. 不周山 (buzhou) - 难度★★★★★★
+city_buzhou:
+  scenes:
+    - name: "天柱攀登"
+      type: "godot_action"
+      subtype: "platform_challenge"
+      difficulty: 6
+      scene_file: "res://scenes/levels/buzhou_heavenly_pillar.tscn"
+      
+    - name: "共工"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 6
+      scene_file: "res://scenes/levels/buzhou_gong_gong_water.tscn"
+      
+    - name: "祝融"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 6
+      scene_file: "res://scenes/levels/buzhou_zhu_rong_fire.tscn"
+      
+    - name: "昆仑天界逃亡"
+      type: "escape"
+      difficulty: 6
+      scene_file: "res://scenes/levels/buzhou_heaven_escape.tscn"
+
+# 27. 青丘 (qingqiu) - 难度★★★★★
+city_qingqiu:
+  scenes:
+    - name: "桃花林"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 4
+      scene_file: "res://scenes/levels/qingqiu_peach_blossom_forest.tscn"
+      
+    - name: "九尾狐"
+      type: "godot_action"
+      subtype: "boss_battle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/qingqiu_nine_tailed_fox.tscn"
+      
+    - name: "狐仙情缘"
+      type: "dating"
+      difficulty: 4
+      scene_file: "res://scenes/levels/qingqiu_fox_spirit_romance.tscn"
+      config:
+        romance_type: "fox_spirit"
+        
+    - name: "狐火之谜"
+      type: "puzzle"
+      difficulty: 5
+      scene_file: "res://scenes/levels/qingqiu_fox_fire_puzzle.tscn"
+
+# ============================================
+# 其他城市（简要配置）
+# ============================================
+
+# 28. 绍兴 (shaoxing) - 难度★★
+city_shaoxing:
+  scenes:
+    - name: "鲁迅故里"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 2
+      scene_file: "res://scenes/levels/shaoxing_lu_xun_hometown.tscn"
+
+# 29. 宁波 (ningbo) - 难度★★★
+city_ningbo:
+  scenes:
+    - name: "天一阁"
+      type: "godot_action"
+      subtype: "castle_battle"
+      difficulty: 3
+      scene_file: "res://scenes/levels/ningbo_tianyi_pavilion.tscn"
+
+# 30. 湖州 (huzhou) - 难度★★
+city_huzhou:
+  scenes:
+    - name: "南浔古镇"
+      type: "godot_action"
+      subtype: "speed_run"
+      difficulty: 2
+      scene_file: "res://scenes/levels/huzhou_nanxun_water_town.tscn"
+
+# ============================================
+# 关卡类型统计
+# ============================================
+# Godot Action (Speed Run): 22 个
+# Godot Action (Castle Battle): 18 个
+# Godot Action (Platform Challenge): 10 个
+# Godot Action (Boss Battle): 15 个
+# Puzzle (解谜): 12 个
+# Rhythm (节奏): 2 个
+# Dating (恋爱): 2 个
+# Survival (生存): 4 个（未列出，需补充）
+# Escape (逃亡): 2 个
+# 
+# 总计：85+ 关卡

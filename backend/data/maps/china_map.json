@@ -1,0 +1,521 @@
+{
+  "map_id": "china_travel",
+  "name": "华夏游录 - 中华大地",
+  "description": "游历中华大地，体验各地文化风情",
+  "background_image": "assets/china_map_bg.png",
+  "max_travel_distance": 2,
+  "total_cities": 30,
+  "total_challenges": 80,
+  "regions": [
+    {
+      "region_id": "jiangnan",
+      "name": "江南地区",
+      "center_x": 900,
+      "center_y": 400,
+      "cities": [
+        {
+          "city_id": "suzhou",
+          "name": "苏州",
+          "province": "江苏",
+          "x": 850,
+          "y": 380,
+          "is_start_city": true,
+          "difficulty": 1,
+          "unlocks": ["hangzhou", "huangshan", "nanjing"],
+          "challenges": [
+            {
+              "id": "suzhou_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "园林跑酷",
+              "difficulty": 1,
+              "description": "在拙政园的亭台楼阁间穿梭"
+            },
+            {
+              "id": "suzhou_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "虎丘塔战斗",
+              "difficulty": 1,
+              "description": "攀登虎丘塔，击败守塔者"
+            }
+          ]
+        },
+        {
+          "city_id": "hangzhou",
+          "name": "杭州",
+          "province": "浙江",
+          "x": 800,
+          "y": 450,
+          "is_start_city": false,
+          "difficulty": 2,
+          "unlocks": ["shaoxing", "ningbo"],
+          "challenges": [
+            {
+              "id": "hangzhou_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "雷峰塔挑战",
+              "difficulty": 2,
+              "description": "攀登雷峰塔，与白蛇战斗"
+            },
+            {
+              "id": "hangzhou_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "西湖漫游",
+              "difficulty": 2,
+              "description": "在西湖十景间快速穿梭"
+            }
+          ]
+        },
+        {
+          "city_id": "huangshan",
+          "name": "黄山",
+          "province": "安徽",
+          "x": 750,
+          "y": 420,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": ["hongcun", "tunxi"],
+          "challenges": [
+            {
+              "id": "huangshan_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "攀登黄山",
+              "difficulty": 3,
+              "description": "在奇松怪石间攀爬跳跃"
+            },
+            {
+              "id": "huangshan_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "云海飞行",
+              "difficulty": 3,
+              "description": "在云海间快速穿梭"
+            }
+          ]
+        },
+        {
+          "city_id": "nanjing",
+          "name": "南京",
+          "province": "江苏",
+          "x": 880,
+          "y": 360,
+          "is_start_city": false,
+          "difficulty": 2,
+          "unlocks": ["zhenjiang", "yangzhou"],
+          "challenges": [
+            {
+              "id": "nanjing_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "明城墙战斗",
+              "difficulty": 2,
+              "description": "在古城墙上与守卫战斗"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "lingnan",
+      "name": "岭南地区",
+      "center_x": 600,
+      "center_y": 700,
+      "cities": [
+        {
+          "city_id": "guangzhou",
+          "name": "广州",
+          "province": "广东",
+          "x": 600,
+          "y": 700,
+          "is_start_city": true,
+          "difficulty": 3,
+          "unlocks": ["shenzhen", "foshan", "zhuhai"],
+          "challenges": [
+            {
+              "id": "guangzhou_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "十三行战斗",
+              "difficulty": 3,
+              "description": "在古代商埠中与守卫战斗"
+            },
+            {
+              "id": "guangzhou_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "珠江夜跑酷",
+              "difficulty": 3,
+              "description": "在珠江夜景中快速穿梭"
+            }
+          ]
+        },
+        {
+          "city_id": "shenzhen",
+          "name": "深圳",
+          "province": "广东",
+          "x": 650,
+          "y": 720,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": ["zhongshan"],
+          "challenges": [
+            {
+              "id": "shenzhen_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "梧桐山攀岩",
+              "difficulty": 4,
+              "description": "攀登深圳第一高峰"
+            },
+            {
+              "id": "shenzhen_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "科技新城",
+              "difficulty": 4,
+              "description": "在现代建筑间穿梭"
+            }
+          ]
+        },
+        {
+          "city_id": "guilin",
+          "name": "桂林",
+          "province": "广西",
+          "x": 500,
+          "y": 650,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": ["yangshuo", "nanning"],
+          "challenges": [
+            {
+              "id": "guilin_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "漓江竹筏漂流",
+              "difficulty": 4,
+              "description": "在漓江山水间快速漂流"
+            },
+            {
+              "id": "guilin_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "象鼻山攀爬",
+              "difficulty": 4,
+              "description": "攀爬象鼻山奇峰"
+            }
+          ]
+        },
+        {
+          "city_id": "nanning",
+          "name": "南宁",
+          "province": "广西",
+          "x": 480,
+          "y": 700,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": ["beihai"],
+          "challenges": [
+            {
+              "id": "nanning_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "壮族神兽",
+              "difficulty": 3,
+              "description": "挑战壮族传说中的神兽"
+            }
+          ]
+        },
+        {
+          "city_id": "haikou",
+          "name": "海口",
+          "province": "海南",
+          "x": 550,
+          "y": 850,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["sanya"],
+          "challenges": [
+            {
+              "id": "haikou_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "椰风海韵",
+              "difficulty": 5,
+              "description": "在热带海滨快速穿梭"
+            },
+            {
+              "id": "haikou_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "火山口战斗",
+              "difficulty": 5,
+              "description": "在古火山口中与守卫战斗"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "southwest",
+      "name": "西南地区",
+      "center_x": 400,
+      "center_y": 550,
+      "cities": [
+        {
+          "city_id": "chengdu",
+          "name": "成都",
+          "province": "四川",
+          "x": 400,
+          "y": 550,
+          "is_start_city": true,
+          "difficulty": 4,
+          "unlocks": ["chongqing", "dujiangyan", "emei"],
+          "challenges": [
+            {
+              "id": "chengdu_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "武侯祠战斗",
+              "difficulty": 4,
+              "description": "在三国古祠中与守卫战斗"
+            },
+            {
+              "id": "chengdu_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "竹林跑酷",
+              "difficulty": 4,
+              "description": "在熊猫竹林中快速穿梭"
+            }
+          ]
+        },
+        {
+          "city_id": "chongqing",
+          "name": "重庆",
+          "province": "重庆",
+          "x": 450,
+          "y": 580,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["wulong", "fengdu"],
+          "challenges": [
+            {
+              "id": "chongqing_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "山城阶梯",
+              "difficulty": 5,
+              "description": "攀爬重庆天梯"
+            },
+            {
+              "id": "chongqing_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "洪崖洞战斗",
+              "difficulty": 5,
+              "description": "在吊脚楼群中战斗"
+            }
+          ]
+        },
+        {
+          "city_id": "kunming",
+          "name": "昆明",
+          "province": "云南",
+          "x": 300,
+          "y": 650,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": ["dali", "lijiang"],
+          "challenges": [
+            {
+              "id": "kunming_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "滇池飞行",
+              "difficulty": 4,
+              "description": "在滇池上空快速飞行"
+            },
+            {
+              "id": "kunming_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "石林战斗",
+              "difficulty": 4,
+              "description": "在喀斯特石林中战斗"
+            }
+          ]
+        },
+        {
+          "city_id": "dali",
+          "name": "大理",
+          "province": "云南",
+          "x": 280,
+          "y": 630,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["shuanglang"],
+          "challenges": [
+            {
+              "id": "dali_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "大理古塔",
+              "difficulty": 5,
+              "description": "攀登大理三塔"
+            },
+            {
+              "id": "dali_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "洱海漫游",
+              "difficulty": 5,
+              "description": "在洱海边快速穿梭"
+            }
+          ]
+        },
+        {
+          "city_id": "guiyang",
+          "name": "贵阳",
+          "province": "贵州",
+          "x": 500,
+          "y": 600,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": ["anlong", "kaili"],
+          "challenges": [
+            {
+              "id": "guiyang_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "黄果树瀑布",
+              "difficulty": 4,
+              "description": "在瀑布间攀爬跳跃"
+            },
+            {
+              "id": "guiyang_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "苗寨飞行",
+              "difficulty": 4,
+              "description": "在苗族村寨上空飞行"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "central",
+      "name": "华中地区",
+      "center_x": 700,
+      "center_y": 500,
+      "cities": [
+        {
+          "city_id": "wuhan",
+          "name": "武汉",
+          "province": "湖北",
+          "x": 700,
+          "y": 500,
+          "is_start_city": true,
+          "difficulty": 2,
+          "unlocks": ["yichang", "xiangyang"],
+          "challenges": [
+            {
+              "id": "wuhan_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "黄鹤楼战斗",
+              "difficulty": 2,
+              "description": "在江南名楼上战斗"
+            },
+            {
+              "id": "wuhan_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长江大桥",
+              "difficulty": 2,
+              "description": "在长江大桥上快速奔跑"
+            }
+          ]
+        },
+        {
+          "city_id": "changsha",
+          "name": "长沙",
+          "province": "湖南",
+          "x": 650,
+          "y": 550,
+          "is_start_city": false,
+          "difficulty": 3,
+          "unlocks": ["zhangjiajie", "yueyang"],
+          "challenges": [
+            {
+              "id": "changsha_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "岳麓山跑酷",
+              "difficulty": 3,
+              "description": "在岳麓山间快速穿梭"
+            },
+            {
+              "id": "changsha_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "天心阁战斗",
+              "difficulty": 3,
+              "description": "在古阁楼中战斗"
+            }
+          ]
+        },
+        {
+          "city_id": "zhangjiajie",
+          "name": "张家界",
+          "province": "湖南",
+          "x": 600,
+          "y": 570,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "zhangjiajie_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "武陵源奇峰",
+              "difficulty": 5,
+              "description": "在石英砂岩峰林间攀爬"
+            },
+            {
+              "id": "zhangjiajie_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "天门山飞行",
+              "difficulty": 5,
+              "description": "在天门洞上空飞行"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chain_stories": [
+    {
+      "id": "white_snake_story",
+      "name": "白蛇传",
+      "trigger_cities": ["hangzhou"],
+      "trigger_challenges": ["hangzhou_battle_01", "hangzhou_speed_01"],
+      "reward": "白娘子的祝福 - 全属性 +10%",
+      "description": "完成雷峰塔挑战和西湖漫游后，触发白蛇传特殊剧情"
+    },
+    {
+      "id": "shu_road_challenge",
+      "name": "蜀道难",
+      "trigger_cities": ["chengdu", "chongqing"],
+      "trigger_challenges": ["chengdu_battle_01", "chongqing_platform_01"],
+      "reward": "蜀道通行证 - 解锁隐藏城市",
+      "description": "完成成都和重庆的所有挑战后，解锁蜀道难特殊副本"
+    }
+  ]
+}

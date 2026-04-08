@@ -1,5 +1,5 @@
 """地图数据模型"""
-from typing import List, Optional
+from typing import List, Optional, Dict
 from pydantic import BaseModel
 
 
@@ -11,6 +11,49 @@ class MapNode(BaseModel):
     next: List[int]
     x: float = 0
     y: float = 0
+
+
+class Challenge(BaseModel):
+    """挑战/副本"""
+    id: str
+    type: str
+    subtype: Optional[str] = None
+    name: str
+    difficulty: int
+    description: str = ""
+    godot_level: Optional[str] = None
+
+
+class City(BaseModel):
+    """城市"""
+    city_id: str
+    name: str
+    province: str
+    x: float
+    y: float
+    is_start_city: bool = False
+    difficulty: int = 1
+    unlocks: List[str] = []
+    challenges: List[Challenge] = []
+
+
+class Region(BaseModel):
+    """地区"""
+    region_id: str
+    name: str
+    center_x: float
+    center_y: float
+    cities: List[City] = []
+
+
+class ChainStory(BaseModel):
+    """连锁剧情"""
+    id: str
+    name: str
+    trigger_cities: List[str]
+    trigger_challenges: List[str]
+    reward: str
+    description: str
 
 
 class MapMeta(BaseModel):
@@ -26,7 +69,11 @@ class MapData(BaseModel):
     map_id: str
     name: str
     description: str
-    nodes: List[MapNode]
+    nodes: List[MapNode] = []
+    background_image: Optional[str] = None
+    regions: List[Region] = []
+    chain_stories: List[ChainStory] = []
+    max_travel_distance: int = 2
 
 
 class DiceResult(BaseModel):

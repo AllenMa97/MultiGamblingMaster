@@ -1,0 +1,14 @@
+{
+  "save_id": "db0741f8-e120-49cf-a9d4-fbaa060c6409",
+  "player_name": "WWF",
+  "map_id": "map_02",
+  "current_position": 0,
+  "completed_nodes": [],
+  "failed_nodes": [],
+  "dice_history": [],
+  "total_wins": 0,
+  "total_losses": 0,
+  "created_at": "2026-04-03T18:33:21.151808",
+  "updated_at": "2026-04-03T18:33:21.151808",
+  "is_completed": false
+}

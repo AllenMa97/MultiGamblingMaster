@@ -1,0 +1,428 @@
+{
+  "map_id": "china_travel_extended",
+  "name": "华夏游录 - 完整版",
+  "description": "游历中华大地，体验山海经神话与各地民俗文化",
+  "background_image": "assets/china_map_bg_extended.png",
+  "max_travel_distance": 2,
+  "total_cities": 30,
+  "total_challenges": 80,
+  "regions": [
+    {
+      "region_id": "northwest",
+      "name": "西北地区",
+      "center_x": 300,
+      "center_y": 300,
+      "cities": [
+        {
+          "city_id": "xian",
+          "name": "西安",
+          "province": "陕西",
+          "x": 350,
+          "y": 350,
+          "is_start_city": false,
+          "difficulty": 4,
+          "unlocks": ["xianyang", "baoji", "yanan"],
+          "challenges": [
+            {
+              "id": "xian_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "兵马俑复活",
+              "difficulty": 4,
+              "description": "秦始皇陵中复活的陶俑军队",
+              "cultural_element": "兵马俑、秦始皇"
+            },
+            {
+              "id": "xian_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长安夜市",
+              "difficulty": 4,
+              "description": "在大唐不夜城屋顶穿梭",
+              "cultural_element": "唐代建筑、夜市"
+            },
+            {
+              "id": "xian_puzzle_01",
+              "type": "puzzle",
+              "name": "青铜鼎之谜",
+              "difficulty": 4,
+              "description": "破解西周青铜器的铭文密码",
+              "cultural_element": "青铜器、铭文"
+            },
+            {
+              "id": "xian_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "秦始皇陵",
+              "difficulty": 5,
+              "description": "挑战守护地宫的机关兽",
+              "cultural_element": "机关术、地宫"
+            }
+          ]
+        },
+        {
+          "city_id": "dunhuang",
+          "name": "敦煌",
+          "province": "甘肃",
+          "x": 200,
+          "y": 320,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["jiayuguan", "tulufan"],
+          "challenges": [
+            {
+              "id": "dunhuang_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "莫高窟飞行",
+              "difficulty": 5,
+              "description": "在敦煌洞窟壁画间穿梭",
+              "cultural_element": "飞天壁画、佛教艺术"
+            },
+            {
+              "id": "dunhuang_puzzle_01",
+              "type": "puzzle",
+              "name": "藏经洞密码",
+              "difficulty": 5,
+              "description": "解读藏经洞的古代经卷",
+              "cultural_element": "藏经洞、敦煌遗书"
+            },
+            {
+              "id": "dunhuang_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "九色鹿王",
+              "difficulty": 5,
+              "description": "帮助九色鹿王降服妖魔",
+              "cultural_element": "九色鹿传说、佛教故事"
+            },
+            {
+              "id": "dunhuang_survival_01",
+              "type": "survival",
+              "name": "沙漠求生",
+              "difficulty": 5,
+              "description": "在塔克拉玛干沙漠生存 7 天",
+              "cultural_element": "丝绸之路、沙漠"
+            }
+          ]
+        },
+        {
+          "city_id": "sanxingdui",
+          "name": "三星堆",
+          "province": "四川",
+          "x": 380,
+          "y": 520,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["jinsha"],
+          "challenges": [
+            {
+              "id": "sanxingdui_puzzle_01",
+              "type": "puzzle",
+              "name": "青铜神树之谜",
+              "difficulty": 5,
+              "description": "解读青铜神树的星象密码",
+              "cultural_element": "青铜神树、古蜀天文"
+            },
+            {
+              "id": "sanxingdui_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "黄金面具",
+              "difficulty": 5,
+              "description": "探索古蜀王陵的秘密",
+              "cultural_element": "黄金面具、古蜀王"
+            },
+            {
+              "id": "sanxingdui_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "纵目神像",
+              "difficulty": 5,
+              "description": "挑战复活的古蜀神灵",
+              "cultural_element": "纵目面具、蜀王传说"
+            },
+            {
+              "id": "sanxingdui_escape_01",
+              "type": "escape",
+              "name": "古城逃亡",
+              "difficulty": 5,
+              "description": "从古蜀祭坛逃离",
+              "cultural_element": "古蜀祭祀、神秘仪式"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "north_china",
+      "name": "华北地区",
+      "center_x": 800,
+      "center_y": 250,
+      "cities": [
+        {
+          "city_id": "beijing",
+          "name": "北京",
+          "province": "北京",
+          "x": 850,
+          "y": 280,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["tianjin", "chengde"],
+          "challenges": [
+            {
+              "id": "beijing_battle_01",
+              "type": "godot_action",
+              "subtype": "castle_battle",
+              "name": "故宫守卫",
+              "difficulty": 5,
+              "description": "在紫禁城中与神兽战斗",
+              "cultural_element": "故宫、皇家建筑"
+            },
+            {
+              "id": "beijing_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "长城跑酷",
+              "difficulty": 5,
+              "description": "在万里长城上飞奔",
+              "cultural_element": "长城、古代防御"
+            },
+            {
+              "id": "beijing_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "天坛攀登",
+              "difficulty": 5,
+              "description": "攀登天坛祈年殿",
+              "cultural_element": "天坛、祭天仪式"
+            },
+            {
+              "id": "beijing_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "龙脉守护",
+              "difficulty": 5,
+              "description": "挑战北京龙脉的守护神龙",
+              "cultural_element": "龙脉、风水"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "region_id": "mythology",
+      "name": "山海经神话",
+      "center_x": 500,
+      "center_y": 150,
+      "cities": [
+        {
+          "city_id": "kunlun",
+          "name": "昆仑山",
+          "province": "神话",
+          "x": 500,
+          "y": 150,
+          "is_start_city": false,
+          "difficulty": 6,
+          "unlocks": ["penglai", "fangzhang"],
+          "challenges": [
+            {
+              "id": "kunlun_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "昆仑天梯",
+              "difficulty": 6,
+              "description": "攀登通天之梯",
+              "cultural_element": "昆仑山、天梯传说"
+            },
+            {
+              "id": "kunlun_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "西王母",
+              "difficulty": 6,
+              "description": "拜见西王母",
+              "cultural_element": "西王母、山海经"
+            },
+            {
+              "id": "kunlun_boss_02",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "开明兽",
+              "difficulty": 6,
+              "description": "挑战昆仑守护兽",
+              "cultural_element": "开明兽、山海经神兽"
+            },
+            {
+              "id": "kunlun_puzzle_01",
+              "type": "puzzle",
+              "name": "瑶池仙草",
+              "difficulty": 6,
+              "description": "寻找不死仙草",
+              "cultural_element": "瑶池、不死药"
+            },
+            {
+              "id": "kunlun_escape_01",
+              "type": "escape",
+              "name": "天界逃亡",
+              "difficulty": 6,
+              "description": "从昆仑天界逃离",
+              "cultural_element": "天界、神仙世界"
+            }
+          ]
+        },
+        {
+          "city_id": "buzhou",
+          "name": "不周山",
+          "province": "神话",
+          "x": 500,
+          "y": 100,
+          "is_start_city": false,
+          "difficulty": 6,
+          "unlocks": [],
+          "challenges": [
+            {
+              "id": "buzhou_platform_01",
+              "type": "godot_action",
+              "subtype": "platform_challenge",
+              "name": "天柱攀登",
+              "difficulty": 6,
+              "description": "攀登支撑天空的巨柱",
+              "cultural_element": "不周山、共工怒触"
+            },
+            {
+              "id": "buzhou_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "共工",
+              "difficulty": 6,
+              "description": "与水神共工对决",
+              "cultural_element": "共工、上古神话"
+            },
+            {
+              "id": "buzhou_boss_02",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "祝融",
+              "difficulty": 6,
+              "description": "与火神祝融对决",
+              "cultural_element": "祝融、火神"
+            }
+          ]
+        },
+        {
+          "city_id": "qingqiu",
+          "name": "青丘",
+          "province": "神话",
+          "x": 900,
+          "y": 450,
+          "is_start_city": false,
+          "difficulty": 5,
+          "unlocks": ["tushan"],
+          "challenges": [
+            {
+              "id": "qingqiu_speed_01",
+              "type": "godot_action",
+              "subtype": "speed_run",
+              "name": "桃花林",
+              "difficulty": 5,
+              "description": "在千年桃林中穿梭",
+              "cultural_element": "桃花林、仙境"
+            },
+            {
+              "id": "qingqiu_boss_01",
+              "type": "godot_action",
+              "subtype": "boss_battle",
+              "name": "九尾狐",
+              "difficulty": 5,
+              "description": "与九尾狐仙对决",
+              "cultural_element": "九尾狐、山海经"
+            },
+            {
+              "id": "qingqiu_puzzle_01",
+              "type": "puzzle",
+              "name": "狐火之谜",
+              "difficulty": 5,
+              "description": "解读狐火的密码",
+              "cultural_element": "狐火、妖怪传说"
+            },
+            {
+              "id": "qingqiu_dating_01",
+              "type": "dating",
+              "name": "狐仙情缘",
+              "difficulty": 5,
+              "description": "与狐仙的浪漫邂逅",
+              "cultural_element": "狐仙、人妖恋"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chain_stories": [
+    {
+      "id": "white_snake_story",
+      "name": "白蛇传",
+      "trigger_cities": ["hangzhou"],
+      "trigger_challenges": ["hangzhou_battle_01", "hangzhou_speed_01"],
+      "reward": "白娘子的祝福 - 全属性 +10%",
+      "description": "完成雷峰塔挑战和西湖漫游后，触发白蛇传特殊剧情"
+    },
+    {
+      "id": "shu_road_challenge",
+      "name": "蜀道难",
+      "trigger_cities": ["chengdu", "chongqing"],
+      "trigger_challenges": ["chengdu_battle_01", "chongqing_platform_01"],
+      "reward": "蜀道通行证 - 解锁隐藏城市",
+      "description": "完成成都和重庆的所有挑战后，解锁蜀道难特殊副本"
+    },
+    {
+      "id": "qin_empire_story",
+      "name": "大秦帝国",
+      "trigger_cities": ["xian"],
+      "trigger_challenges": ["xian_battle_01", "xian_speed_01", "xian_puzzle_01", "xian_boss_01"],
+      "reward": "秦始皇的玉玺 - 权力 +50%",
+      "description": "完成西安所有关卡，体验秦始皇统一六国的史诗"
+    },
+    {
+      "id": "silk_road_story",
+      "name": "丝绸之路",
+      "trigger_cities": ["dunhuang"],
+      "trigger_challenges": ["dunhuang_speed_01", "dunhuang_puzzle_01", "dunhuang_boss_01"],
+      "reward": "丝路商队 - 金币 +30%",
+      "description": "重走丝绸之路，体验东西方文化交流"
+    },
+    {
+      "id": "ancient_shu_story",
+      "name": "古蜀文明",
+      "trigger_cities": ["sanxingdui", "jinsha"],
+      "trigger_challenges": ["sanxingdui_puzzle_01", "sanxingdui_boss_01"],
+      "reward": "黄金面具 - 视力 +40%",
+      "description": "探索神秘的三星堆古蜀文明"
+    },
+    {
+      "id": "imperial_story",
+      "name": "明清皇家",
+      "trigger_cities": ["beijing"],
+      "trigger_challenges": ["beijing_battle_01", "beijing_speed_01", "beijing_boss_01"],
+      "reward": "皇家玉佩 - 声望 +50%",
+      "description": "体验明清两代皇家的辉煌"
+    },
+    {
+      "id": "fengshen_story",
+      "name": "封神榜",
+      "trigger_cities": ["kunlun"],
+      "trigger_challenges": ["kunlun_boss_01", "kunlun_boss_02", "kunlun_puzzle_01"],
+      "reward": "封神榜 - 全属性 +100%",
+      "description": "完成昆仑山试炼，参与封神大战"
+    },
+    {
+      "id": "nvwa_story",
+      "name": "女娲补天",
+      "trigger_cities": ["buzhou"],
+      "trigger_challenges": ["buzhou_boss_01", "buzhou_boss_02"],
+      "reward": "五彩石 - 解锁隐藏结局",
+      "description": "见证上古神话，女娲补天的壮举"
+    }
+  ]
+}

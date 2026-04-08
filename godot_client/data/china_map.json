@@ -1,0 +1,212 @@
+{
+  "width": 2400,
+  "height": 2000,
+  "source": "DataV GeoJSON",
+  "resolution": "high",
+  "cities": [
+    {
+      "name": "北京",
+      "lon": 116.4,
+      "lat": 39.9,
+      "is_capital": true
+    },
+    {
+      "name": "天津",
+      "lon": 117.2,
+      "lat": 39.1,
+      "is_capital": false
+    },
+    {
+      "name": "上海",
+      "lon": 121.5,
+      "lat": 31.2,
+      "is_capital": false
+    },
+    {
+      "name": "重庆",
+      "lon": 106.5,
+      "lat": 29.5,
+      "is_capital": false
+    },
+    {
+      "name": "哈尔滨",
+      "lon": 126.6,
+      "lat": 45.8,
+      "is_capital": false
+    },
+    {
+      "name": "长春",
+      "lon": 125.3,
+      "lat": 43.8,
+      "is_capital": false
+    },
+    {
+      "name": "沈阳",
+      "lon": 123.4,
+      "lat": 41.8,
+      "is_capital": false
+    },
+    {
+      "name": "石家庄",
+      "lon": 114.5,
+      "lat": 38.0,
+      "is_capital": false
+    },
+    {
+      "name": "太原",
+      "lon": 112.5,
+      "lat": 37.9,
+      "is_capital": false
+    },
+    {
+      "name": "呼和浩特",
+      "lon": 111.7,
+      "lat": 40.8,
+      "is_capital": false
+    },
+    {
+      "name": "济南",
+      "lon": 117.0,
+      "lat": 36.7,
+      "is_capital": false
+    },
+    {
+      "name": "郑州",
+      "lon": 113.6,
+      "lat": 34.8,
+      "is_capital": false
+    },
+    {
+      "name": "西安",
+      "lon": 108.9,
+      "lat": 34.3,
+      "is_capital": false
+    },
+    {
+      "name": "兰州",
+      "lon": 103.8,
+      "lat": 36.1,
+      "is_capital": false
+    },
+    {
+      "name": "西宁",
+      "lon": 101.8,
+      "lat": 36.6,
+      "is_capital": false
+    },
+    {
+      "name": "银川",
+      "lon": 106.2,
+      "lat": 38.5,
+      "is_capital": false
+    },
+    {
+      "name": "乌鲁木齐",
+      "lon": 87.6,
+      "lat": 43.8,
+      "is_capital": false
+    },
+    {
+      "name": "拉萨",
+      "lon": 91.1,
+      "lat": 29.7,
+      "is_capital": false
+    },
+    {
+      "name": "南京",
+      "lon": 118.8,
+      "lat": 32.1,
+      "is_capital": false
+    },
+    {
+      "name": "杭州",
+      "lon": 120.2,
+      "lat": 30.3,
+      "is_capital": false
+    },
+    {
+      "name": "福州",
+      "lon": 119.3,
+      "lat": 26.1,
+      "is_capital": false
+    },
+    {
+      "name": "台北",
+      "lon": 121.5,
+      "lat": 25.0,
+      "is_capital": false
+    },
+    {
+      "name": "南昌",
+      "lon": 115.9,
+      "lat": 28.7,
+      "is_capital": false
+    },
+    {
+      "name": "武汉",
+      "lon": 114.3,
+      "lat": 30.6,
+      "is_capital": false
+    },
+    {
+      "name": "长沙",
+      "lon": 113.0,
+      "lat": 28.2,
+      "is_capital": false
+    },
+    {
+      "name": "贵阳",
+      "lon": 106.7,
+      "lat": 26.6,
+      "is_capital": false
+    },
+    {
+      "name": "昆明",
+      "lon": 102.7,
+      "lat": 25.0,
+      "is_capital": false
+    },
+    {
+      "name": "成都",
+      "lon": 104.1,
+      "lat": 30.7,
+      "is_capital": false
+    },
+    {
+      "name": "广州",
+      "lon": 113.3,
+      "lat": 23.1,
+      "is_capital": false
+    },
+    {
+      "name": "深圳",
+      "lon": 114.1,
+      "lat": 22.5,
+      "is_capital": false
+    },
+    {
+      "name": "南宁",
+      "lon": 108.3,
+      "lat": 22.8,
+      "is_capital": false
+    },
+    {
+      "name": "海口",
+      "lon": 110.3,
+      "lat": 20.0,
+      "is_capital": false
+    },
+    {
+      "name": "香港",
+      "lon": 114.2,
+      "lat": 22.3,
+      "is_capital": false
+    },
+    {
+      "name": "澳门",
+      "lon": 113.5,
+      "lat": 22.2,
+      "is_capital": false
+    }
+  ]
+}

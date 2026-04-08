@@ -8,8 +8,9 @@ from backend.routers.action_router import router as action_router
 from backend.routers.ai_router import router as ai_router
 from backend.routers.game_router import router as game_router
 from backend.routers.spy_router import router as spy_router
+from backend.routers.china_map_router import router as china_map_router
 
-app = FastAPI(title="多副本棋盘冒险", version="0.1.0")
+app = FastAPI(title="华夏游录 - 中国地图游历", version="0.2.0")
 
 # CORS 配置
 app.add_middleware(
@@ -34,6 +35,7 @@ app.include_router(action_router, prefix="/api")
 app.include_router(ai_router)
 app.include_router(game_router, prefix="/api")
 app.include_router(spy_router, prefix="/api")
+app.include_router(china_map_router, prefix="/api")
 
 # WebSocket 支持（预留）
 # @app.websocket("/ws")

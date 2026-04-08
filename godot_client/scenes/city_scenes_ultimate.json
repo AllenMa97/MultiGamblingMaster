@@ -1,0 +1,3256 @@
+{
+  "total_cities": 65,
+  "total_scenes": 195,
+  "cities": [
+    {
+      "city_id": "beijing",
+      "city_name": "北京",
+      "province": "北京",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "beijing_castle_battle_1",
+          "name": "故宫守卫",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/beijing_castle_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/beijing.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "beijing_speed_run_2",
+          "name": "长城跑酷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/beijing_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/beijing.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "beijing_platform_challenge_3",
+          "name": "天坛攀登",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/beijing_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/beijing.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "tianjin",
+      "city_name": "天津",
+      "province": "天津",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "tianjin_speed_run_1",
+          "name": "海河漫游",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/tianjin_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/tianjin.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "tianjin_puzzle_2",
+          "name": "古文化街",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/tianjin_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/tianjin.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "tianjin_platform_challenge_3",
+          "name": "滨海图书馆",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/tianjin_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/tianjin.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "shanghai",
+      "city_name": "上海",
+      "province": "上海",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "shanghai_speed_run_1",
+          "name": "外滩夜景",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/shanghai_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/shanghai.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shanghai_platform_challenge_2",
+          "name": "东方明珠",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/shanghai_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shanghai.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "shanghai_puzzle_3",
+          "name": "豫园之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shanghai_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shanghai.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "chongqing",
+      "city_name": "重庆",
+      "province": "重庆",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "chongqing_platform_challenge_1",
+          "name": "山城阶梯",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/chongqing_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/chongqing.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "chongqing_castle_battle_2",
+          "name": "洪崖洞战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/chongqing_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/chongqing.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "chongqing_puzzle_3",
+          "name": "火锅之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/chongqing_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/chongqing.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "shenyang",
+      "city_name": "沈阳",
+      "province": "辽宁",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "shenyang_castle_battle_1",
+          "name": "沈阳故宫",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shenyang_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shenyang.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shenyang_speed_run_2",
+          "name": "北陵公园",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shenyang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/shenyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shenyang_puzzle_3",
+          "name": "张氏帅府",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shenyang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shenyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "dalian",
+      "city_name": "大连",
+      "province": "辽宁",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "dalian_speed_run_1",
+          "name": "星海广场",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/dalian_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/dalian.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "dalian_platform_challenge_2",
+          "name": "老虎滩",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/dalian_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/dalian.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "dalian_puzzle_3",
+          "name": "有轨电车",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/dalian_puzzle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/dalian.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "changchun",
+      "city_name": "长春",
+      "province": "吉林",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "changchun_castle_battle_1",
+          "name": "伪满皇宫",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/changchun_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/changchun.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "changchun_puzzle_2",
+          "name": "电影城",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/changchun_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/changchun.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "changchun_speed_run_3",
+          "name": "净月潭",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/changchun_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/changchun.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "harbin",
+      "city_name": "哈尔滨",
+      "province": "黑龙江",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "harbin_speed_run_1",
+          "name": "中央大街",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/harbin_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/harbin.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "harbin_puzzle_2",
+          "name": "冰灯之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/harbin_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/harbin.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "harbin_castle_battle_3",
+          "name": "索菲亚教堂",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/harbin_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/harbin.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "shijiazhuang",
+      "city_name": "石家庄",
+      "province": "河北",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "shijiazhuang_speed_run_1",
+          "name": "赵州桥",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shijiazhuang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/shijiazhuang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shijiazhuang_castle_battle_2",
+          "name": "正定古城",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shijiazhuang_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shijiazhuang.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shijiazhuang_puzzle_3",
+          "name": "西柏坡",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shijiazhuang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shijiazhuang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "taiyuan",
+      "city_name": "太原",
+      "province": "山西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "taiyuan_castle_battle_1",
+          "name": "晋祠",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/taiyuan_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taiyuan.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "taiyuan_platform_challenge_2",
+          "name": "双塔寺",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/taiyuan_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taiyuan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "taiyuan_puzzle_3",
+          "name": "煤炭之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/taiyuan_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taiyuan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "datong",
+      "city_name": "大同",
+      "province": "山西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "datong_castle_battle_1",
+          "name": "云冈石窟",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/datong_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/datong.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "datong_platform_challenge_2",
+          "name": "悬空寺",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/datong_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/datong.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "datong_puzzle_3",
+          "name": "九龙壁",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/datong_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/datong.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "hohhot",
+      "city_name": "呼和浩特",
+      "province": "内蒙古",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "hohhot_castle_battle_1",
+          "name": "大召寺",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/hohhot_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/hohhot.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "hohhot_speed_run_2",
+          "name": "草原驰骋",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/hohhot_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/hohhot.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "hohhot_puzzle_3",
+          "name": "蒙古包之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/hohhot_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/hohhot.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "baotou",
+      "city_name": "包头",
+      "province": "内蒙古",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "baotou_puzzle_1",
+          "name": "稀土之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/baotou_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/baotou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "baotou_survival_2",
+          "name": "草原钢城",
+          "type": "godot_action",
+          "subtype": "survival",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/baotou_survival_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/baotou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "baotou_castle_battle_3",
+          "name": "五当召",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/baotou_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/baotou.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "nanjing",
+      "city_name": "南京",
+      "province": "江苏",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "nanjing_castle_battle_1",
+          "name": "明城墙战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanjing_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanjing.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "nanjing_speed_run_2",
+          "name": "中山陵跑酷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanjing_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/nanjing.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "nanjing_puzzle_3",
+          "name": "夫子庙",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanjing_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanjing.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "suzhou",
+      "city_name": "苏州",
+      "province": "江苏",
+      "difficulty": 2,
+      "scenes": [
+        {
+          "id": "suzhou_speed_run_1",
+          "name": "园林跑酷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/suzhou_speed_run_2.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/suzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "suzhou_castle_battle_2",
+          "name": "虎丘塔战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/suzhou_castle_battle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/suzhou.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "suzhou_puzzle_3",
+          "name": "苏绣之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/suzhou_puzzle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/suzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "wuxi",
+      "city_name": "无锡",
+      "province": "江苏",
+      "difficulty": 2,
+      "scenes": [
+        {
+          "id": "wuxi_speed_run_1",
+          "name": "太湖漫游",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/wuxi_speed_run_2.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/wuxi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "wuxi_puzzle_2",
+          "name": "灵山大佛",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/wuxi_puzzle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wuxi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "wuxi_platform_challenge_3",
+          "name": "鼋头渚",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/wuxi_platform_challenge_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wuxi.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "hangzhou",
+      "city_name": "杭州",
+      "province": "浙江",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "hangzhou_castle_battle_1",
+          "name": "雷峰塔挑战",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/hangzhou_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/hangzhou.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "hangzhou_speed_run_2",
+          "name": "西湖漫游",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/hangzhou_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/hangzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "hangzhou_dating_3",
+          "name": "断桥邂逅",
+          "type": "dating",
+          "subtype": "dating",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/hangzhou_dating_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/hangzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "ningbo",
+      "city_name": "宁波",
+      "province": "浙江",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "ningbo_castle_battle_1",
+          "name": "天一阁",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/ningbo_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/ningbo.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "ningbo_speed_run_2",
+          "name": "港口城市",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/ningbo_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/ningbo.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "ningbo_puzzle_3",
+          "name": "河姆渡",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/ningbo_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/ningbo.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "wenzhou",
+      "city_name": "温州",
+      "province": "浙江",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "wenzhou_platform_challenge_1",
+          "name": "雁荡山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/wenzhou_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wenzhou.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "wenzhou_speed_run_2",
+          "name": "瓯江夜游",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/wenzhou_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/wenzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "wenzhou_puzzle_3",
+          "name": "商人精神",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/wenzhou_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wenzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "fuzhou",
+      "city_name": "福州",
+      "province": "福建",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "fuzhou_speed_run_1",
+          "name": "三坊七巷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/fuzhou_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/fuzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "fuzhou_platform_challenge_2",
+          "name": "鼓山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/fuzhou_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/fuzhou.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "fuzhou_puzzle_3",
+          "name": "脱胎漆器",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/fuzhou_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/fuzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "xiamen",
+      "city_name": "厦门",
+      "province": "福建",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "xiamen_speed_run_1",
+          "name": "鼓浪屿",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/xiamen_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/xiamen.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xiamen_castle_battle_2",
+          "name": "南普陀寺",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/xiamen_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xiamen.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xiamen_puzzle_3",
+          "name": "土楼之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xiamen_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xiamen.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "nanchang",
+      "city_name": "南昌",
+      "province": "江西",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "nanchang_castle_battle_1",
+          "name": "滕王阁",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanchang_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanchang.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "nanchang_puzzle_2",
+          "name": "八一起义",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanchang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanchang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "nanchang_speed_run_3",
+          "name": "鄱阳湖",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanchang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/nanchang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "jingdezhen",
+      "city_name": "景德镇",
+      "province": "江西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "jingdezhen_puzzle_1",
+          "name": "瓷器之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/jingdezhen_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jingdezhen.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "jingdezhen_castle_battle_2",
+          "name": "古窑遗址",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/jingdezhen_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jingdezhen.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "jingdezhen_rhythm_3",
+          "name": "青花瓷",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/jingdezhen_rhythm_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jingdezhen.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "jinan",
+      "city_name": "济南",
+      "province": "山东",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "jinan_speed_run_1",
+          "name": "趵突泉",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/jinan_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/jinan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "jinan_platform_challenge_2",
+          "name": "大明湖",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/jinan_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jinan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "jinan_castle_battle_3",
+          "name": "千佛山",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/jinan_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jinan.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "qingdao",
+      "city_name": "青岛",
+      "province": "山东",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "qingdao_speed_run_1",
+          "name": "栈桥",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/qingdao_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/qingdao.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "qingdao_platform_challenge_2",
+          "name": "崂山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/qingdao_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/qingdao.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "qingdao_rhythm_3",
+          "name": "啤酒节",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/qingdao_rhythm_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/qingdao.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "taian",
+      "city_name": "泰安",
+      "province": "山东",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "taian_platform_challenge_1",
+          "name": "泰山攀登",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/taian_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taian.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "taian_castle_battle_2",
+          "name": "岱庙",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/taian_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taian.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "taian_speed_run_3",
+          "name": "日出云海",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/taian_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/taian.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "wuhan",
+      "city_name": "武汉",
+      "province": "湖北",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "wuhan_castle_battle_1",
+          "name": "黄鹤楼战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/wuhan_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wuhan.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "wuhan_speed_run_2",
+          "name": "长江大桥",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/wuhan_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/wuhan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "wuhan_puzzle_3",
+          "name": "热干面之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/wuhan_puzzle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wuhan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "yichang",
+      "city_name": "宜昌",
+      "province": "湖北",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "yichang_platform_challenge_1",
+          "name": "三峡大坝",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yichang_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/yichang.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "yichang_speed_run_2",
+          "name": "葛洲坝",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yichang_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/yichang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "yichang_puzzle_3",
+          "name": "屈原故里",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/yichang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/yichang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "changsha",
+      "city_name": "长沙",
+      "province": "湖南",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "changsha_speed_run_1",
+          "name": "岳麓山跑酷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/changsha_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/changsha.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "changsha_castle_battle_2",
+          "name": "天心阁战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/changsha_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/changsha.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "changsha_puzzle_3",
+          "name": "臭豆腐之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/changsha_puzzle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/changsha.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "zhangjiajie",
+      "city_name": "张家界",
+      "province": "湖南",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "zhangjiajie_platform_challenge_1",
+          "name": "武陵源奇峰",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/zhangjiajie_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zhangjiajie.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "zhangjiajie_speed_run_2",
+          "name": "天门山飞行",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/zhangjiajie_speed_run_5.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/zhangjiajie.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "zhangjiajie_survival_3",
+          "name": "玻璃栈道",
+          "type": "godot_action",
+          "subtype": "survival",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/zhangjiajie_survival_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zhangjiajie.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "zhengzhou",
+      "city_name": "郑州",
+      "province": "河南",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "zhengzhou_castle_battle_1",
+          "name": "少林寺",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/zhengzhou_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zhengzhou.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "zhengzhou_platform_challenge_2",
+          "name": "嵩山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/zhengzhou_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zhengzhou.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "zhengzhou_puzzle_3",
+          "name": "商代遗址",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/zhengzhou_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zhengzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "luoyang",
+      "city_name": "洛阳",
+      "province": "河南",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "luoyang_castle_battle_1",
+          "name": "龙门石窟",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/luoyang_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/luoyang.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "luoyang_speed_run_2",
+          "name": "牡丹花海",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/luoyang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/luoyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "luoyang_puzzle_3",
+          "name": "白马寺之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/luoyang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/luoyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "kaifeng",
+      "city_name": "开封",
+      "province": "河南",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "kaifeng_speed_run_1",
+          "name": "清明上河园",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/kaifeng_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/kaifeng.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "kaifeng_castle_battle_2",
+          "name": "开封府",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/kaifeng_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/kaifeng.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "kaifeng_platform_challenge_3",
+          "name": "铁塔",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/kaifeng_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/kaifeng.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "guangzhou",
+      "city_name": "广州",
+      "province": "广东",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "guangzhou_castle_battle_1",
+          "name": "十三行战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/guangzhou_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/guangzhou.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "guangzhou_speed_run_2",
+          "name": "珠江夜跑酷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/guangzhou_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/guangzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "guangzhou_puzzle_3",
+          "name": "早茶之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/guangzhou_puzzle_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/guangzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "shenzhen",
+      "city_name": "深圳",
+      "province": "广东",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "shenzhen_platform_challenge_1",
+          "name": "梧桐山攀岩",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shenzhen_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shenzhen.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "shenzhen_speed_run_2",
+          "name": "科技新城",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shenzhen_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/shenzhen.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shenzhen_puzzle_3",
+          "name": "世界之窗",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/shenzhen_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shenzhen.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "foshan",
+      "city_name": "佛山",
+      "province": "广东",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "foshan_castle_battle_1",
+          "name": "黄飞鸿",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/foshan_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/foshan.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "foshan_puzzle_2",
+          "name": "祖庙",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/foshan_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/foshan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "foshan_platform_challenge_3",
+          "name": "南风古灶",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/foshan_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/foshan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "guilin",
+      "city_name": "桂林",
+      "province": "广西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "guilin_speed_run_1",
+          "name": "漓江竹筏漂流",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/guilin_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/guilin.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "guilin_platform_challenge_2",
+          "name": "象鼻山攀爬",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/guilin_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/guilin.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "guilin_rhythm_3",
+          "name": "刘三姐对歌",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/guilin_rhythm_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/guilin.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "nanning",
+      "city_name": "南宁",
+      "province": "广西",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "nanning_boss_battle_1",
+          "name": "壮族神兽",
+          "type": "godot_action",
+          "subtype": "boss_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanning_boss_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanning.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "nanning_rhythm_2",
+          "name": "铜鼓舞",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 2,
+          "scene_file": "res://scenes/levels/nanning_rhythm_2.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanning.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "nanning_platform_challenge_3",
+          "name": "青秀山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/nanning_platform_challenge_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/nanning.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "haikou",
+      "city_name": "海口",
+      "province": "海南",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "haikou_speed_run_1",
+          "name": "椰风海韵",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/haikou_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/haikou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "haikou_castle_battle_2",
+          "name": "火山口战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/haikou_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/haikou.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "haikou_dating_3",
+          "name": "天涯海角",
+          "type": "dating",
+          "subtype": "dating",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/haikou_dating_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/haikou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "sanya",
+      "city_name": "三亚",
+      "province": "海南",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "sanya_speed_run_1",
+          "name": "亚龙湾",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/sanya_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/sanya.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "sanya_puzzle_2",
+          "name": "南山寺",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/sanya_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/sanya.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "sanya_survival_3",
+          "name": "蜈支洲岛",
+          "type": "godot_action",
+          "subtype": "survival",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/sanya_survival_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/sanya.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "chengdu",
+      "city_name": "成都",
+      "province": "四川",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "chengdu_castle_battle_1",
+          "name": "武侯祠战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/chengdu_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/chengdu.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "chengdu_speed_run_2",
+          "name": "竹林跑酷",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/chengdu_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/chengdu.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "chengdu_puzzle_3",
+          "name": "三国密码",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/chengdu_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/chengdu.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "mianyang",
+      "city_name": "绵阳",
+      "province": "四川",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "mianyang_speed_run_1",
+          "name": "科技城",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/mianyang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/mianyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "mianyang_puzzle_2",
+          "name": "李白故里",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/mianyang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/mianyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "mianyang_platform_challenge_3",
+          "name": "窦圌山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/mianyang_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/mianyang.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "leshan",
+      "city_name": "乐山",
+      "province": "四川",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "leshan_platform_challenge_1",
+          "name": "乐山大佛",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/leshan_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/leshan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "leshan_platform_challenge_2",
+          "name": "峨眉山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/leshan_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/leshan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "leshan_puzzle_3",
+          "name": "佛教文化",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/leshan_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/leshan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "jiuzhaigou",
+      "city_name": "九寨沟",
+      "province": "四川",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "jiuzhaigou_speed_run_1",
+          "name": "五彩池",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/jiuzhaigou_speed_run_5.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/jiuzhaigou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "jiuzhaigou_platform_challenge_2",
+          "name": "诺日朗瀑布",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/jiuzhaigou_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jiuzhaigou.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "jiuzhaigou_rhythm_3",
+          "name": "藏族风情",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/jiuzhaigou_rhythm_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jiuzhaigou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "kunming",
+      "city_name": "昆明",
+      "province": "云南",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "kunming_speed_run_1",
+          "name": "滇池飞行",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/kunming_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/kunming.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "kunming_castle_battle_2",
+          "name": "石林战斗",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/kunming_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/kunming.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "kunming_speed_run_3",
+          "name": "春城花海",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/kunming_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/kunming.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "dali",
+      "city_name": "大理",
+      "province": "云南",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "dali_castle_battle_1",
+          "name": "大理古塔",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/dali_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/dali.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "dali_speed_run_2",
+          "name": "洱海漫游",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/dali_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/dali.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "dali_rhythm_3",
+          "name": "白族风情",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/dali_rhythm_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/dali.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "lijiang",
+      "city_name": "丽江",
+      "province": "云南",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "lijiang_speed_run_1",
+          "name": "丽江古城",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/lijiang_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/lijiang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "lijiang_platform_challenge_2",
+          "name": "玉龙雪山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/lijiang_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lijiang.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "lijiang_puzzle_3",
+          "name": "纳西文化",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/lijiang_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lijiang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "shangrila",
+      "city_name": "香格里拉",
+      "province": "云南",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "shangrila_platform_challenge_1",
+          "name": "梅里雪山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 6,
+          "scene_file": "res://scenes/levels/shangrila_platform_challenge_6.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shangrila.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "shangrila_castle_battle_2",
+          "name": "松赞林寺",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/shangrila_castle_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shangrila.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shangrila_survival_3",
+          "name": "虎跳峡",
+          "type": "godot_action",
+          "subtype": "survival",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/shangrila_survival_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shangrila.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "guiyang",
+      "city_name": "贵阳",
+      "province": "贵州",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "guiyang_platform_challenge_1",
+          "name": "黄果树瀑布",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/guiyang_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/guiyang.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "guiyang_speed_run_2",
+          "name": "苗寨飞行",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/guiyang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/guiyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "guiyang_puzzle_3",
+          "name": "酸汤鱼",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/guiyang_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/guiyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "zunyi",
+      "city_name": "遵义",
+      "province": "贵州",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "zunyi_puzzle_1",
+          "name": "遵义会议",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/zunyi_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zunyi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "zunyi_platform_challenge_2",
+          "name": "赤水丹霞",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/zunyi_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zunyi.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "zunyi_puzzle_3",
+          "name": "茅台镇",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/zunyi_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/zunyi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "lhasa",
+      "city_name": "拉萨",
+      "province": "西藏",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "lhasa_castle_battle_1",
+          "name": "布达拉宫",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/lhasa_castle_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lhasa.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "lhasa_platform_challenge_2",
+          "name": "雪域高原",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/lhasa_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lhasa.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "lhasa_puzzle_3",
+          "name": "大昭寺",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/lhasa_puzzle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lhasa.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "shigatse",
+      "city_name": "日喀则",
+      "province": "西藏",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "shigatse_castle_battle_1",
+          "name": "扎什伦布寺",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/shigatse_castle_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shigatse.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shigatse_survival_2",
+          "name": "珠峰大本营",
+          "type": "godot_action",
+          "subtype": "survival",
+          "difficulty": 6,
+          "scene_file": "res://scenes/levels/shigatse_survival_6.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/shigatse.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "shigatse_speed_run_3",
+          "name": "羊卓雍措",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/shigatse_speed_run_5.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/shigatse.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "xian",
+      "city_name": "西安",
+      "province": "陕西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "xian_castle_battle_1",
+          "name": "兵马俑复活",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xian_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xian.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xian_speed_run_2",
+          "name": "长安夜市",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/xian_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/xian.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xian_puzzle_3",
+          "name": "青铜鼎之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xian_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xian.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "xianyang",
+      "city_name": "咸阳",
+      "province": "陕西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "xianyang_castle_battle_1",
+          "name": "乾陵",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xianyang_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xianyang.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xianyang_puzzle_2",
+          "name": "汉阳陵",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xianyang_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xianyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xianyang_speed_run_3",
+          "name": "郑国渠",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/xianyang_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/xianyang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "yanan",
+      "city_name": "延安",
+      "province": "陕西",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "yanan_platform_challenge_1",
+          "name": "宝塔山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yanan_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/yanan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "yanan_puzzle_2",
+          "name": "枣园",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/yanan_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/yanan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "yanan_speed_run_3",
+          "name": "黄河壶口",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yanan_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/yanan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "lanzhou",
+      "city_name": "兰州",
+      "province": "甘肃",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "lanzhou_speed_run_1",
+          "name": "黄河铁桥",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/lanzhou_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/lanzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "lanzhou_puzzle_2",
+          "name": "牛肉面之谜",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/lanzhou_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lanzhou.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "lanzhou_platform_challenge_3",
+          "name": "白塔山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/lanzhou_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/lanzhou.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "dunhuang",
+      "city_name": "敦煌",
+      "province": "甘肃",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "dunhuang_speed_run_1",
+          "name": "莫高窟飞行",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/dunhuang_speed_run_5.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/dunhuang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "dunhuang_puzzle_2",
+          "name": "藏经洞密码",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/dunhuang_puzzle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/dunhuang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "dunhuang_boss_battle_3",
+          "name": "九色鹿王",
+          "type": "godot_action",
+          "subtype": "boss_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/dunhuang_boss_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/dunhuang.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "jiayuguan",
+      "city_name": "嘉峪关",
+      "province": "甘肃",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "jiayuguan_castle_battle_1",
+          "name": "天下第一雄关",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/jiayuguan_castle_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jiayuguan.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "jiayuguan_speed_run_2",
+          "name": "长城西端",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/jiayuguan_speed_run_5.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/jiayuguan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "jiayuguan_survival_3",
+          "name": "戈壁滩",
+          "type": "godot_action",
+          "subtype": "survival",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/jiayuguan_survival_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/jiayuguan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "xining",
+      "city_name": "西宁",
+      "province": "青海",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "xining_speed_run_1",
+          "name": "青海湖",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xining_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/xining.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xining_puzzle_2",
+          "name": "塔尔寺",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/xining_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xining.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "xining_rhythm_3",
+          "name": "环湖赛",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/xining_rhythm_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/xining.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "yinchuan",
+      "city_name": "银川",
+      "province": "宁夏",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "yinchuan_castle_battle_1",
+          "name": "西夏王陵",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yinchuan_castle_battle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/yinchuan.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "yinchuan_speed_run_2",
+          "name": "沙湖",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yinchuan_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/yinchuan.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "yinchuan_platform_challenge_3",
+          "name": "贺兰山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/yinchuan_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/yinchuan.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "wulumuqi",
+      "city_name": "乌鲁木齐",
+      "province": "新疆",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "wulumuqi_platform_challenge_1",
+          "name": "天山天池",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/wulumuqi_platform_challenge_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wulumuqi.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "wulumuqi_speed_run_2",
+          "name": "大巴扎",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/wulumuqi_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/wulumuqi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "wulumuqi_rhythm_3",
+          "name": "维吾尔族舞蹈",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/wulumuqi_rhythm_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/wulumuqi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "kashi",
+      "city_name": "喀什",
+      "province": "新疆",
+      "difficulty": 5,
+      "scenes": [
+        {
+          "id": "kashi_castle_battle_1",
+          "name": "古城",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/kashi_castle_battle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/kashi.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "kashi_puzzle_2",
+          "name": "艾提尕尔清真寺",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/kashi_puzzle_5.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/kashi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "kashi_speed_run_3",
+          "name": "丝绸之路",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 5,
+          "scene_file": "res://scenes/levels/kashi_speed_run_5.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/kashi.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "hongkong",
+      "city_name": "香港",
+      "province": "香港",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "hongkong_speed_run_1",
+          "name": "维多利亚港",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/hongkong_speed_run_4.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/hongkong.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "hongkong_platform_challenge_2",
+          "name": "太平山",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/hongkong_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/hongkong.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "hongkong_puzzle_3",
+          "name": "迪士尼",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/hongkong_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/hongkong.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "macau",
+      "city_name": "澳门",
+      "province": "澳门",
+      "difficulty": 3,
+      "scenes": [
+        {
+          "id": "macau_castle_battle_1",
+          "name": "大三巴",
+          "type": "godot_action",
+          "subtype": "castle_battle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/macau_castle_battle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/macau.png",
+            "enemy_count": 5,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "macau_speed_run_2",
+          "name": "威尼斯人",
+          "type": "godot_action",
+          "subtype": "speed_run",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/macau_speed_run_3.tscn",
+          "config": {
+            "time_limit": 120,
+            "background": "res://assets/backgrounds/macau.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "macau_puzzle_3",
+          "name": "葡京赌场",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/macau_puzzle_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/macau.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "city_id": "taipei",
+      "city_name": "台北",
+      "province": "台湾",
+      "difficulty": 4,
+      "scenes": [
+        {
+          "id": "taipei_platform_challenge_1",
+          "name": "台北 101",
+          "type": "godot_action",
+          "subtype": "platform_challenge",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/taipei_platform_challenge_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taipei.png",
+            "enemy_count": 0,
+            "platform_count": 30
+          }
+        },
+        {
+          "id": "taipei_puzzle_2",
+          "name": "故宫博物院",
+          "type": "puzzle",
+          "subtype": "puzzle",
+          "difficulty": 4,
+          "scene_file": "res://scenes/levels/taipei_puzzle_4.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taipei.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        },
+        {
+          "id": "taipei_rhythm_3",
+          "name": "夜市美食",
+          "type": "rhythm",
+          "subtype": "rhythm",
+          "difficulty": 3,
+          "scene_file": "res://scenes/levels/taipei_rhythm_3.tscn",
+          "config": {
+            "time_limit": 180,
+            "background": "res://assets/backgrounds/taipei.png",
+            "enemy_count": 0,
+            "platform_count": 0
+          }
+        }
+      ]
+    }
+  ]
+}
